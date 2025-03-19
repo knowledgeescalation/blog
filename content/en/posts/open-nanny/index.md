@@ -12,4 +12,9 @@ Secure, Smart, and Open: Building a Feature-Rich Raspberry Pi Baby Monitor with 
 
 ..in progress
 
+```python
+def fun(x, y):
+    ret = x * y
+    return ret
+```
 
