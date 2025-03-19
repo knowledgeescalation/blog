@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://knowledgeescalation.com/</loc>
     <lastmod>2025-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/open-nanny/</loc>
+    <loc>https://knowledgeescalation.com/posts/open-nanny/</loc>
     <lastmod>2025-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://knowledgeescalation.com/posts/</loc>
     <lastmod>2025-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pages/about/</loc>
+    <loc>https://knowledgeescalation.com/pages/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://knowledgeescalation.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/</loc>
+    <loc>https://knowledgeescalation.com/pages/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://knowledgeescalation.com/tags/</loc>
   </url>
 </urlset>
