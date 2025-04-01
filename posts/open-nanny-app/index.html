@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Open Nanny App | Knowledge Escalation</title>
+<meta property="og:title" content="Open Nanny App | Knowledge Escalation" />
+<meta name="twitter:title" content="Open Nanny App | Knowledge Escalation" />
+<meta itemprop="name" content="Open Nanny App | Knowledge Escalation" />
+<meta name="application-name" content="Open Nanny App | Knowledge Escalation" />
+<meta property="og:site_name" content="Knowledge Escalation" />
+
+<meta name="description" content="Building a Smart Baby Monitor App with Kotlin and Jetpack Compose">
+<meta itemprop="description" content="Building a Smart Baby Monitor App with Kotlin and Jetpack Compose" />
+<meta property="og:description" content="Building a Smart Baby Monitor App with Kotlin and Jetpack Compose" />
+<meta name="twitter:description" content="Building a Smart Baby Monitor App with Kotlin and Jetpack Compose" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en-us" href="https://knowledgeescalation.com/posts/open-nanny-app/" title="English" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2025-04-01T00:00:00Z />
+    <meta property="article:published_time" content=2025-04-01T00:00:00Z />
+    <meta property="og:url" content="https://knowledgeescalation.com/posts/open-nanny-app/" />
+
+    
+    <meta property="og:article:author" content="Knowledge Escalation" />
+    <meta property="article:author" content="Knowledge Escalation" />
+    <meta name="author" content="Knowledge Escalation" />
+    
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Open Nanny App",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2025-04-01",
+        "description": "Building a Smart Baby Monitor App with Kotlin and Jetpack Compose",
+        "wordCount":  2486 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2025-04-01",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Knowledge Escalation"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.139.0">
+
+    
+    <meta property="og:url" content="https://knowledgeescalation.com/posts/open-nanny-app/">
+  <meta property="og:site_name" content="Knowledge Escalation">
+  <meta property="og:title" content="Open Nanny App">
+  <meta property="og:description" content="Building a Smart Baby Monitor App with Kotlin and Jetpack Compose">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-01T00:00:00+00:00">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Open Nanny App">
+  <meta name="twitter:description" content="Building a Smart Baby Monitor App with Kotlin and Jetpack Compose">
+
+
+    
+
+    <link rel="canonical" href="https://knowledgeescalation.com/posts/open-nanny-app/">
+    <link href="/style.min.8af2a6e1f212af88de596042bddb8322249c4d0ad45a782bb17d9f0c5047a9f9.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://knowledgeescalation.com/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    
+    
+</head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://knowledgeescalation.com/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/pages/about/">
+                        About
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Open Nanny App</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2025-04-01T00:00:00&#43;00:00" itemprop="datePublished"> Apr 1, 2025 </time>
+                </div>
+                
+            </header>
+            
+    
+    <details class="toc" ZgotmplZ>
+        <summary><b>Table of Contents</b></summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction-to-the-opennannyapp-architecture">Introduction to the OpenNannyApp Architecture</a></li>
+    <li><a href="#setting-up-the-network-communication-layer">Setting Up the Network Communication Layer</a>
+      <ul>
+        <li><a href="#implementing-the-api-service-interface">Implementing the API Service Interface</a></li>
+        <li><a href="#token-authentication-implementation">Token Authentication Implementation</a></li>
+        <li><a href="#creating-the-network-module">Creating the Network Module</a></li>
+      </ul>
+    </li>
+    <li><a href="#implementing-real-time-video-streaming-with-webrtc">Implementing Real-Time Video Streaming with WebRTC</a>
+      <ul>
+        <li><a href="#setting-up-webrtc-components">Setting Up WebRTC Components</a></li>
+        <li><a href="#implementing-websocket-signaling">Implementing WebSocket Signaling</a></li>
+        <li><a href="#establishing-the-webrtc-connection">Establishing the WebRTC Connection</a></li>
+      </ul>
+    </li>
+    <li><a href="#building-the-ui-with-jetpack-compose">Building the UI with Jetpack Compose</a>
+      <ul>
+        <li><a href="#creating-the-main-navigation-screen">Creating the Main Navigation Screen</a></li>
+        <li><a href="#implementing-the-sensors-screen">Implementing the Sensors Screen</a></li>
+      </ul>
+    </li>
+    <li><a href="#implementing-the-viewmodel-layer">Implementing the ViewModel Layer</a>
+      <ul>
+        <li><a href="#sensors-viewmodel">Sensors ViewModel</a></li>
+        <li><a href="#led-control-viewmodel">LED Control ViewModel</a></li>
+      </ul>
+    </li>
+    <li><a href="#creating-the-video-screen">Creating the Video Screen</a></li>
+    <li><a href="#building-the-music-player">Building the Music Player</a>
+      <ul>
+        <li><a href="#implementing-the-music-selection-screen">Implementing the Music Selection Screen</a></li>
+        <li><a href="#implementing-the-music-player-controls">Implementing the Music Player Controls</a></li>
+      </ul>
+    </li>
+    <li><a href="#implementing-the-music-viewmodel">Implementing the Music ViewModel</a></li>
+    <li><a href="#application-initialization">Application Initialization</a></li>
+    <li><a href="#conclusion-putting-it-all-together">Conclusion: Putting It All Together</a></li>
+  </ul>
+</nav>
+    </details>
+            <div class="page-content">
+                <h1 id="building-a-smart-baby-monitor-app-with-kotlin-and-jetpack-compose-a-comprehensive-tutorial">Building a Smart Baby Monitor App with Kotlin and Jetpack Compose: A Comprehensive Tutorial</h1>
+<div class="justify">
+In an era where smart home technology is becoming increasingly prevalent, creating a connected baby monitor app represents both a practical and educational project for Android developers. This tutorial walks through how to build an advanced baby monitor application - <a href="https://github.com/knowledgeescalation/OpenNannyApp">OpenNannyApp</a> - that provides real-time video streaming, environmental sensor monitoring, music playback, and lighting control. We&rsquo;ll explore how to implement these features using modern Android development techniques including Kotlin, Jetpack Compose, Retrofit, and WebRTC.
+</div>
+
+<h2 id="introduction-to-the-opennannyapp-architecture">Introduction to the OpenNannyApp Architecture</h2>
+<div class="justify">
+OpenNannyApp follows a modern MVVM (Model-View-ViewModel) architecture pattern, with a clear separation of concerns between UI components, business logic, and data handling. Before diving into implementation details, let&rsquo;s understand the app&rsquo;s core components:
+</div>
+
+<ol>
+<li><strong>Network Communication Layer</strong>: Handles API requests using Retrofit and token-based authentication</li>
+<li><strong>Video Streaming Module</strong>: Implements WebRTC for real-time video transmission</li>
+<li><strong>UI Layer</strong>: Built with Jetpack Compose for a reactive and declarative interface</li>
+<li><strong>ViewModels</strong>: Manage data flow and state for different features (sensors, music, lighting)</li>
+</ol>
+<div class="justify">
+This architecture promotes maintainability, testability, and separation of concerns—principles that are essential for any production-quality application.
+</div>
+
+<h2 id="setting-up-the-network-communication-layer">Setting Up the Network Communication Layer</h2>
+<div class="justify">
+At the heart of our app is the ability to communicate with the baby monitor device. Let&rsquo;s examine how the <a href="https://github.com/knowledgeescalation/OpenNannyApp/blob/master/src/main/java/com/example/opennannyapp/api/NetworkModule.kt">NetworkModule</a> establishes this critical connection.
+</div>
+
+<h3 id="implementing-the-api-service-interface">Implementing the API Service Interface</h3>
+<p>The first step is defining our API endpoints through a Retrofit interface:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">interface</span> <span class="nc">ApiService</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@GET</span><span class="p">(</span><span class="s2">&#34;/sensors&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">suspend</span> <span class="k">fun</span> <span class="nf">getSensors</span><span class="p">():</span> <span class="n">InfoObject</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="nd">@FormUrlEncoded</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@POST</span><span class="p">(</span><span class="s2">&#34;/token&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">suspend</span> <span class="k">fun</span> <span class="nf">login</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nd">@Field</span><span class="p">(</span><span class="s2">&#34;username&#34;</span><span class="p">)</span> <span class="n">username</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nd">@Field</span><span class="p">(</span><span class="s2">&#34;password&#34;</span><span class="p">)</span> <span class="n">password</span><span class="p">:</span> <span class="n">String</span>
+</span></span><span class="line"><span class="cl">    <span class="p">):</span> <span class="n">LoginResponse</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="nd">@POST</span><span class="p">(</span><span class="s2">&#34;/led&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">suspend</span> <span class="k">fun</span> <span class="nf">led</span><span class="p">(</span><span class="nd">@Body</span> <span class="n">user</span><span class="p">:</span> <span class="n">LedRequest</span><span class="p">):</span> <span class="n">LedResponse</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="nd">@POST</span><span class="p">(</span><span class="s2">&#34;/music&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">suspend</span> <span class="k">fun</span> <span class="nf">getDirs</span><span class="p">(</span><span class="nd">@Body</span> <span class="n">user</span><span class="p">:</span> <span class="n">MusicRequest</span><span class="p">):</span> <span class="n">DirObject</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// Additional music control endpoints...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><div class="justify">
+This interface defines all the endpoints our app will communicate with, using Retrofit annotations to specify the HTTP method, path, and parameter format.
+</div>
+
+<h3 id="token-authentication-implementation">Token Authentication Implementation</h3>
+<p>To ensure secure communication, we implement token-based authentication:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">TokenAuthenticator</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">val</span> <span class="py">apiService</span><span class="p">:</span> <span class="n">ApiService</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">val</span> <span class="py">getCredentials</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="n">LoginRequest</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">val</span> <span class="py">saveToken</span><span class="p">:</span> <span class="p">(</span><span class="n">String</span><span class="p">)</span> <span class="o">-&gt;</span><span class="p">;</span> <span class="n">Unit</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span> <span class="p">:</span> <span class="n">Authenticator</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">override</span> <span class="k">fun</span> <span class="nf">authenticate</span><span class="p">(</span><span class="n">route</span><span class="p">:</span> <span class="n">Route</span><span class="p">?,</span> <span class="n">response</span><span class="p">:</span> <span class="n">Response</span><span class="p">):</span> <span class="n">Request</span><span class="p">?</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Retry logic for authentication
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="p">(</span><span class="n">responseCount</span><span class="p">(</span><span class="n">response</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="m">3</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="k">null</span> <span class="c1">// Give up after 3 attempts
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="c1">// Refresh token implementation
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">return</span> <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">val</span> <span class="py">newToken</span> <span class="p">=</span> <span class="n">runBlocking</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">val</span> <span class="py">credentials</span> <span class="p">=</span> <span class="n">getCredentials</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="k">val</span> <span class="py">loginResponse</span> <span class="p">=</span> <span class="n">apiService</span><span class="p">.</span><span class="n">login</span><span class="p">(</span><span class="n">credentials</span><span class="p">.</span><span class="n">username</span><span class="p">,</span> <span class="n">credentials</span><span class="p">.</span><span class="n">password</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">loginResponse</span><span class="p">.</span><span class="n">token</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">            <span class="n">saveToken</span><span class="p">(</span><span class="n">newToken</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">response</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">newBuilder</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="n">header</span><span class="p">(</span><span class="s2">&#34;Authorization&#34;</span><span class="p">,</span> <span class="s2">&#34;Bearer </span><span class="si">$newToken</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="n">build</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">e</span><span class="p">:</span> <span class="n">Exception</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">null</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="justify">
+This authenticator automatically refreshes expired tokens, providing seamless authentication handling.
+</div>
+
+<h3 id="creating-the-network-module">Creating the Network Module</h3>
+<div class="justify">
+The <code>NetworkModule</code> ties everything together by creating an OkHttpClient with the authenticator and initializing the Retrofit instance:
+</div>
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">NetworkModule</span><span class="p">(</span><span class="k">val</span> <span class="py">api</span><span class="n">_ip</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="k">val</span> <span class="py">api</span><span class="n">_user</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="k">val</span> <span class="py">api</span><span class="n">_pass</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">var</span> <span class="py">token</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">val</span> <span class="py">serviceAPI</span> <span class="p">=</span> <span class="n">createApiService</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">fun</span> <span class="nf">createApiService</span><span class="p">():</span> <span class="n">ApiService</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">val</span> <span class="py">okHttpClient</span> <span class="p">=</span> <span class="nc">OkHttpClient</span><span class="p">.</span><span class="n">Builder</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">authenticator</span><span class="p">(</span><span class="n">TokenAuthenticator</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">apiService</span> <span class="p">=</span> <span class="cm">/* bootstrap API service */</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">getCredentials</span> <span class="p">=</span> <span class="p">{</span> <span class="n">LoginRequest</span><span class="p">(</span><span class="n">api_user</span><span class="p">,</span> <span class="n">api_pass</span><span class="p">)</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">                <span class="n">saveToken</span> <span class="p">=</span> <span class="p">{</span> <span class="n">token</span> <span class="o">-&gt;</span> <span class="k">this</span><span class="p">.</span><span class="n">saveToken</span><span class="p">(</span><span class="n">token</span><span class="p">)</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">addInterceptor</span> <span class="p">{</span> <span class="n">chain</span> <span class="o">-&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// Add authorization header to requests
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="k">val</span> <span class="py">request</span> <span class="p">=</span> <span class="n">chain</span><span class="p">.</span><span class="n">request</span><span class="p">().</span><span class="n">newBuilder</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">header</span><span class="p">(</span><span class="s2">&#34;Authorization&#34;</span><span class="p">,</span> <span class="s2">&#34;Bearer </span><span class="si">$token</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">build</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="n">chain</span><span class="p">.</span><span class="n">proceed</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">build</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nc">Retrofit</span><span class="p">.</span><span class="n">Builder</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">baseUrl</span><span class="p">(</span><span class="s2">&#34;https://</span><span class="si">$api</span><span class="s2">_ip&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">client</span><span class="p">(</span><span class="n">okHttpClient</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">addConverterFactory</span><span class="p">(</span><span class="nc">GsonConverterFactory</span><span class="p">.</span><span class="n">create</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">build</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">create</span><span class="p">(</span><span class="n">ApiService</span><span class="o">::</span><span class="k">class</span><span class="p">.</span><span class="n">java</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="justify">
+This design handles authentication transparently through interceptors and authenticators, allowing the rest of the application to focus on business logic rather than authentication details.
+</div>
+
+<h2 id="implementing-real-time-video-streaming-with-webrtc">Implementing Real-Time Video Streaming with WebRTC</h2>
+<div class="justify">
+One of the most complex features of a baby monitor app is real-time video streaming. Our implementation uses WebRTC, a powerful technology for peer-to-peer communication.
+</div>
+
+<h3 id="setting-up-webrtc-components">Setting Up WebRTC Components</h3>
+<p>We begin by initializing the WebRTC components in our <a href="https://github.com/knowledgeescalation/OpenNannyApp/blob/master/src/main/java/com/example/opennannyapp/api/WebRTC.kt">WebRTC</a> class:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">WebRTC</span><span class="p">(</span><span class="k">private</span> <span class="k">val</span> <span class="py">context</span><span class="p">:</span> <span class="n">Context</span><span class="p">,</span> <span class="k">private</span> <span class="k">val</span> <span class="py">networkModule</span><span class="p">:</span> <span class="n">NetworkModule</span><span class="p">,</span> <span class="k">private</span> <span class="k">val</span> <span class="py">api</span><span class="n">_ip</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">val</span> <span class="py">_remoteVideoTrackFlow</span> <span class="p">=</span> <span class="n">MutableSharedFlow</span><span class="p">&lt;</span><span class="n">VideoTrack</span><span class="p">&gt;()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">val</span> <span class="py">remoteVideoTrackFlow</span><span class="p">:</span> <span class="n">SharedFlow</span><span class="p">&lt;</span><span class="n">VideoTrack</span><span class="p">&gt;</span> <span class="p">=</span> <span class="n">_remoteVideoTrackFlow</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">val</span> <span class="py">_remoteAudioTrackFlow</span> <span class="p">=</span> <span class="n">MutableSharedFlow</span><span class="p">&lt;</span><span class="n">AudioTrack</span><span class="p">&gt;()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">val</span> <span class="py">remoteAudioTrackFlow</span><span class="p">:</span> <span class="n">SharedFlow</span><span class="p">&lt;</span><span class="n">AudioTrack</span><span class="p">&gt;</span> <span class="p">=</span> <span class="n">_remoteAudioTrackFlow</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">val</span> <span class="py">eglBaseContext</span><span class="p">:</span> <span class="nc">EglBase</span><span class="p">.</span><span class="n">Context</span> <span class="k">by</span> <span class="n">lazy</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nc">EglBase</span><span class="p">.</span><span class="n">create</span><span class="p">().</span><span class="n">eglBaseContext</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">val</span> <span class="py">factory</span> <span class="k">by</span> <span class="n">lazy</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nc">PeerConnectionFactory</span><span class="p">.</span><span class="n">initialize</span><span class="p">(</span><span class="cm">/* initialization options */</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nc">PeerConnectionFactory</span><span class="p">.</span><span class="n">builder</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">setVideoDecoderFactory</span><span class="p">(</span><span class="n">DefaultVideoDecoderFactory</span><span class="p">(</span><span class="n">eglBaseContext</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">createPeerConnectionFactory</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">val</span> <span class="py">peerConnection</span> <span class="p">=</span> <span class="n">factory</span><span class="p">.</span><span class="n">createPeerConnection</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">emptyList</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">        <span class="k">object</span> <span class="err">: </span><span class="nc">PeerConnection</span><span class="p">.</span><span class="n">Observer</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Implementation of PeerConnection callbacks
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">override</span> <span class="k">fun</span> <span class="nf">onTrack</span><span class="p">(</span><span class="n">transceiver</span><span class="p">:</span> <span class="n">RtpTransceiver</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">val</span> <span class="py">track</span> <span class="p">=</span> <span class="n">transceiver</span><span class="p">.</span><span class="k">receiver</span><span class="p">.</span><span class="n">track</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">track</span> <span class="k">is</span> <span class="n">VideoTrack</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">sessionManagerScope</span><span class="p">.</span><span class="n">launch</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">_remoteVideoTrackFlow</span><span class="p">.</span><span class="n">emit</span><span class="p">(</span><span class="n">track</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">track</span> <span class="k">is</span> <span class="n">AudioTrack</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">sessionManagerScope</span><span class="p">.</span><span class="n">launch</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">_remoteAudioTrackFlow</span><span class="p">.</span><span class="n">emit</span><span class="p">(</span><span class="n">track</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Other callback implementations...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="justify">
+This setup initializes the WebRTC peer connection and provides flows for video and audio tracks that can be observed in the UI.
+</div>
+
+<h3 id="implementing-websocket-signaling">Implementing WebSocket Signaling</h3>
+<div class="justify">
+WebRTC requires a signaling mechanism to establish connections. We implement this using WebSockets:
+</div>
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">private</span> <span class="k">val</span> <span class="py">client</span> <span class="p">=</span> <span class="n">OkHttpClient</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span> <span class="k">val</span> <span class="py">request</span> <span class="p">=</span> <span class="nc">Request</span><span class="p">.</span><span class="n">Builder</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="n">url</span><span class="p">(</span><span class="s2">&#34;wss://</span><span class="si">$api</span><span class="s2">_ip/webrtc&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="n">header</span><span class="p">(</span><span class="s2">&#34;Authorization&#34;</span><span class="p">,</span> <span class="s2">&#34;Bearer </span><span class="si">${networkModule.getToken()}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="n">build</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span> <span class="k">var</span> <span class="py">ws</span> <span class="p">=</span> <span class="n">client</span><span class="p">.</span><span class="n">newWebSocket</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">SignalingWebSocketListener</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">private</span> <span class="k">inner</span> <span class="k">class</span> <span class="nc">SignalingWebSocketListener</span> <span class="p">:</span> <span class="n">WebSocketListener</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">override</span> <span class="k">fun</span> <span class="nf">onFailure</span><span class="p">(</span><span class="n">webSocket</span><span class="p">:</span> <span class="n">WebSocket</span><span class="p">,</span> <span class="n">t</span><span class="p">:</span> <span class="n">Throwable</span><span class="p">,</span> <span class="n">response</span><span class="p">:</span> <span class="n">Response</span><span class="p">?)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Handle reconnection if authentication fails
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="p">(</span><span class="n">response</span><span class="o">?.</span><span class="n">code</span> <span class="o">==</span> <span class="m">403</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">CoroutineScope</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="n">IO</span><span class="p">).</span><span class="n">launch</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">delay</span><span class="p">(</span><span class="m">1000</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">reconnectWebSocket</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">override</span> <span class="k">fun</span> <span class="nf">onMessage</span><span class="p">(</span><span class="n">webSocket</span><span class="p">:</span> <span class="n">WebSocket</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">offer</span> <span class="p">=</span> <span class="n">text</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="justify">
+Our implementation automatically reconnects when authentication fails, ensuring a reliable connection.
+</div>
+
+<h3 id="establishing-the-webrtc-connection">Establishing the WebRTC Connection</h3>
+<p>When an offer is received from the server, we establish the WebRTC connection:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">private</span> <span class="k">fun</span> <span class="nf">sendAnswer</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">val</span> <span class="py">json</span> <span class="p">=</span> <span class="n">offer</span><span class="o">?.</span><span class="n">let</span> <span class="p">{</span> <span class="n">JSONObject</span><span class="p">(</span><span class="k">it</span><span class="p">)</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">(</span><span class="n">json</span> <span class="o">!=</span> <span class="k">null</span> <span class="o">&amp;&amp;</span> <span class="n">json</span><span class="p">.</span><span class="n">has</span><span class="p">(</span><span class="s2">&#34;sdp&#34;</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">val</span> <span class="py">sdp</span> <span class="p">=</span> <span class="n">SessionDescription</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="nc">SessionDescription</span><span class="p">.</span><span class="nc">Type</span><span class="p">.</span><span class="n">OFFER</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">json</span><span class="p">.</span><span class="n">getString</span><span class="p">(</span><span class="s2">&#34;sdp&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="n">peerConnection</span><span class="p">.</span><span class="n">setRemoteDescription</span><span class="p">(</span><span class="k">object</span> <span class="err">: </span><span class="nc">SdpObserver</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">override</span> <span class="k">fun</span> <span class="nf">onSetSuccess</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">peerConnection</span><span class="p">.</span><span class="n">createAnswer</span><span class="p">(</span><span class="k">object</span> <span class="err">: </span><span class="nc">SdpObserver</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreateSuccess</span><span class="p">(</span><span class="n">answer</span><span class="p">:</span> <span class="n">SessionDescription</span><span class="p">?)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">peerConnection</span><span class="p">.</span><span class="n">setLocalDescription</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="n">answer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">ws</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="n">answer</span><span class="o">?.</span><span class="n">description</span><span class="p">.</span><span class="n">toString</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">// Other callback implementations...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="p">},</span> <span class="n">MediaConstraints</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Other callback implementations...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">},</span> <span class="n">sdp</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="justify">
+This code accepts an offer from the server, creates an appropriate answer, and sends it back through the WebSocket to establish the peer-to-peer connection.
+</div>
+
+<h2 id="building-the-ui-with-jetpack-compose">Building the UI with Jetpack Compose</h2>
+<div class="justify">
+Jetpack Compose provides a modern, declarative way to build UI. Let&rsquo;s look at how we implement the <a href="https://github.com/knowledgeescalation/OpenNannyApp/blob/master/src/main/java/com/example/opennannyapp/MainActivity.kt">main screen</a> and navigation.
+</div>
+
+<h3 id="creating-the-main-navigation-screen">Creating the Main Navigation Screen</h3>
+<p>The main screen provides navigation to different features:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="nd">@Composable</span>
+</span></span><span class="line"><span class="cl"><span class="k">fun</span> <span class="nf">HomeScreen</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">val</span> <span class="py">context</span> <span class="p">=</span> <span class="nc">LocalContext</span><span class="p">.</span><span class="n">current</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">Column</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="n">fillMaxSize</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">verticalArrangement</span> <span class="p">=</span> <span class="nc">Arrangement</span><span class="p">.</span><span class="n">Center</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">horizontalAlignment</span> <span class="p">=</span> <span class="nc">Alignment</span><span class="p">.</span><span class="n">CenterHorizontally</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">text</span> <span class="p">=</span> <span class="s2">&#34;Open Nanny&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">fontSize</span> <span class="p">=</span> <span class="m">30.</span><span class="n">sp</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">fontWeight</span> <span class="p">=</span> <span class="nc">FontWeight</span><span class="p">.</span><span class="n">Bold</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="n">Spacer</span><span class="p">(</span><span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="n">height</span><span class="p">(</span><span class="m">80.</span><span class="n">dp</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="n">Column</span><span class="p">(</span><span class="n">horizontalAlignment</span> <span class="p">=</span> <span class="nc">Alignment</span><span class="p">.</span><span class="n">CenterHorizontally</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">NavigationButton</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">text</span> <span class="p">=</span> <span class="s2">&#34;Sensors&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">imageRes</span> <span class="p">=</span> <span class="nc">R</span><span class="p">.</span><span class="n">drawable</span><span class="p">.</span><span class="n">sensor</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span> <span class="n">context</span><span class="p">.</span><span class="n">startActivity</span><span class="p">(</span><span class="n">Intent</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">SensorsActivity</span><span class="o">::</span><span class="k">class</span><span class="p">.</span><span class="n">java</span><span class="p">))</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">            <span class="n">NavigationButton</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">text</span> <span class="p">=</span> <span class="s2">&#34;Video&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">imageRes</span> <span class="p">=</span> <span class="nc">R</span><span class="p">.</span><span class="n">drawable</span><span class="p">.</span><span class="n">video</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span> <span class="n">context</span><span class="p">.</span><span class="n">startActivity</span><span class="p">(</span><span class="n">Intent</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">VideoActivity</span><span class="o">::</span><span class="k">class</span><span class="p">.</span><span class="n">java</span><span class="p">))</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">            <span class="n">NavigationButton</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">text</span> <span class="p">=</span> <span class="s2">&#34;Music&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">imageRes</span> <span class="p">=</span> <span class="nc">R</span><span class="p">.</span><span class="n">drawable</span><span class="p">.</span><span class="n">music</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span> <span class="n">context</span><span class="p">.</span><span class="n">startActivity</span><span class="p">(</span><span class="n">Intent</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">MusicActivity</span><span class="o">::</span><span class="k">class</span><span class="p">.</span><span class="n">java</span><span class="p">))</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>This creates a clean, centered navigation UI with icons and text labels for each main feature.</p>
+<h3 id="implementing-the-sensors-screen">Implementing the Sensors Screen</h3>
+<p>The <a href="https://github.com/knowledgeescalation/OpenNannyApp/blob/master/src/main/java/com/example/opennannyapp/SensorsActivity.kt">sensors screen</a> displays environmental data from the baby monitor:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="nd">@Composable</span>
+</span></span><span class="line"><span class="cl"><span class="k">fun</span> <span class="nf">SensorsScreen</span><span class="p">(</span><span class="n">viewModel</span><span class="p">:</span> <span class="n">SensorsViewModel</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">val</span> <span class="py">state</span> <span class="p">=</span> <span class="n">viewModel</span><span class="p">.</span><span class="n">state</span><span class="p">.</span><span class="n">collectAsState</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">Box</span><span class="p">(</span><span class="n">contentAlignment</span> <span class="p">=</span> <span class="nc">Alignment</span><span class="p">.</span><span class="n">Center</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">when</span><span class="p">(</span><span class="k">val</span> <span class="py">stateValue</span> <span class="p">=</span> <span class="n">state</span><span class="p">.</span><span class="k">value</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">is</span> <span class="nc">InfoState</span><span class="p">.</span><span class="n">Error</span> <span class="o">-&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Text</span><span class="p">(</span><span class="n">text</span> <span class="p">=</span> <span class="n">stateValue</span><span class="p">.</span><span class="n">message</span><span class="p">,</span> <span class="n">fontSize</span> <span class="p">=</span> <span class="m">24.</span><span class="n">sp</span><span class="p">,</span> <span class="n">color</span> <span class="p">=</span> <span class="nc">Color</span><span class="p">.</span><span class="n">White</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">            <span class="k">is</span> <span class="nc">InfoState</span><span class="p">.</span><span class="n">Success</span> <span class="o">-&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">LazyColumn</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">items</span><span class="p">(</span><span class="n">stateValue</span><span class="p">.</span><span class="n">list</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">PrintInfoItem</span><span class="p">(</span><span class="k">it</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">            <span class="nc">InfoState</span><span class="p">.</span><span class="n">Loading</span> <span class="o">-&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">CircularProgressIndicator</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="n">Column</span><span class="p">(</span><span class="n">verticalArrangement</span> <span class="p">=</span> <span class="nc">Arrangement</span><span class="p">.</span><span class="n">Bottom</span><span class="p">,</span> <span class="n">horizontalAlignment</span> <span class="p">=</span> <span class="nc">Alignment</span><span class="p">.</span><span class="n">CenterHorizontally</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">IconButton</span><span class="p">(</span><span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span><span class="n">viewModel</span><span class="p">.</span><span class="n">loadData</span><span class="p">()},</span> <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="n">size</span><span class="p">(</span><span class="m">64.</span><span class="n">dp</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Image</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">painter</span> <span class="p">=</span> <span class="n">painterResource</span><span class="p">(</span><span class="n">id</span> <span class="p">=</span> <span class="nc">R</span><span class="p">.</span><span class="n">drawable</span><span class="p">.</span><span class="n">restart</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">contentDescription</span> <span class="p">=</span> <span class="s2">&#34;Restart&#34;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="justify">
+This screen handles different states (loading, success, error) and displays sensor data in a scrollable list, with a refresh button at the bottom.
+</div>
+
+<h2 id="implementing-the-viewmodel-layer">Implementing the ViewModel Layer</h2>
+<div class="justify">
+The ViewModel layer is responsible for managing UI state and handling business logic. Let&rsquo;s look at the implementation for sensors and lighting control.
+</div>
+
+<h3 id="sensors-viewmodel">Sensors ViewModel</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">SensorsViewModel</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">val</span> <span class="py">api</span><span class="p">:</span> <span class="n">ApiService</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span> <span class="p">:</span> <span class="n">ViewModel</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">val</span> <span class="py">state</span> <span class="p">=</span> <span class="n">MutableStateFlow</span><span class="p">&lt;</span><span class="n">InfoState</span><span class="p">&gt;(</span><span class="nc">InfoState</span><span class="p">.</span><span class="n">Loading</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">init</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">loadData</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">fun</span> <span class="nf">loadData</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">viewModelScope</span><span class="p">.</span><span class="n">launch</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="n">IO</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">state</span><span class="p">.</span><span class="k">value</span> <span class="p">=</span> <span class="nc">InfoState</span><span class="p">.</span><span class="n">Loading</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">val</span> <span class="py">info</span> <span class="p">=</span> <span class="n">api</span><span class="p">.</span><span class="n">getSensors</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="n">state</span><span class="p">.</span><span class="k">value</span> <span class="p">=</span> <span class="nc">InfoState</span><span class="p">.</span><span class="n">Success</span><span class="p">(</span><span class="n">info</span><span class="p">.</span><span class="n">map</span> <span class="p">{</span> 
+</span></span><span class="line"><span class="cl">                    <span class="n">SensorsViewItem</span><span class="p">(</span><span class="n">name</span> <span class="p">=</span> <span class="k">it</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="k">value</span> <span class="p">=</span> <span class="k">it</span><span class="p">.</span><span class="k">value</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">                <span class="p">})</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">exception</span><span class="p">:</span> <span class="n">Exception</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">state</span><span class="p">.</span><span class="k">value</span> <span class="p">=</span> <span class="nc">InfoState</span><span class="p">.</span><span class="n">Error</span><span class="p">(</span><span class="n">message</span> <span class="p">=</span> <span class="n">exception</span><span class="p">.</span><span class="n">message</span><span class="p">.</span><span class="n">orEmpty</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="justify">
+<a href="https://github.com/knowledgeescalation/OpenNannyApp/blob/master/src/main/java/com/example/opennannyapp/ui/viewModels/SensorsViewModel.kt">This</a> ViewModel fetches sensor data from the API and updates the UI state accordingly, handling errors gracefully.
+</div>
+
+<h3 id="led-control-viewmodel">LED Control ViewModel</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">LedViewModel</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">val</span> <span class="py">api</span><span class="p">:</span> <span class="n">ApiService</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span> <span class="p">:</span> <span class="n">ViewModel</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">val</span> <span class="py">initState</span> <span class="p">=</span> <span class="n">MutableStateFlow</span><span class="p">&lt;</span><span class="n">LedState</span><span class="p">&gt;(</span><span class="nc">LedState</span><span class="p">.</span><span class="n">Loading</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">val</span> <span class="py">state</span> <span class="p">=</span> <span class="n">MutableStateFlow</span><span class="p">&lt;</span><span class="n">LedState</span><span class="p">&gt;(</span><span class="nc">LedState</span><span class="p">.</span><span class="n">Success</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">init</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">getStatus</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">fun</span> <span class="nf">sendCmd</span><span class="p">(</span><span class="n">cmd</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">viewModelScope</span><span class="p">.</span><span class="n">launch</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="n">IO</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">state</span><span class="p">.</span><span class="k">value</span> <span class="p">=</span> <span class="nc">LedState</span><span class="p">.</span><span class="n">Loading</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">val</span> <span class="py">status</span> <span class="p">=</span> <span class="n">api</span><span class="p">.</span><span class="n">led</span><span class="p">(</span><span class="n">LedRequest</span><span class="p">(</span><span class="n">cmd</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                <span class="n">state</span><span class="p">.</span><span class="k">value</span> <span class="p">=</span> <span class="nc">LedState</span><span class="p">.</span><span class="n">Success</span><span class="p">(</span><span class="n">status</span><span class="p">.</span><span class="n">status</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">exception</span><span class="p">:</span> <span class="n">Exception</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">state</span><span class="p">.</span><span class="k">value</span> <span class="p">=</span> <span class="nc">LedState</span><span class="p">.</span><span class="n">Error</span><span class="p">(</span><span class="n">message</span> <span class="p">=</span> <span class="n">exception</span><span class="p">.</span><span class="n">message</span><span class="p">.</span><span class="n">orEmpty</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">fun</span> <span class="nf">getStatus</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">viewModelScope</span><span class="p">.</span><span class="n">launch</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="n">IO</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">initState</span><span class="p">.</span><span class="k">value</span> <span class="p">=</span> <span class="nc">LedState</span><span class="p">.</span><span class="n">Loading</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">val</span> <span class="py">status</span> <span class="p">=</span> <span class="n">api</span><span class="p">.</span><span class="n">led</span><span class="p">(</span><span class="n">LedRequest</span><span class="p">(</span><span class="s2">&#34;status&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                <span class="n">initState</span><span class="p">.</span><span class="k">value</span> <span class="p">=</span> <span class="nc">LedState</span><span class="p">.</span><span class="n">Success</span><span class="p">(</span><span class="n">status</span><span class="p">.</span><span class="n">status</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">exception</span><span class="p">:</span> <span class="n">Exception</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">initState</span><span class="p">.</span><span class="k">value</span> <span class="p">=</span> <span class="nc">LedState</span><span class="p">.</span><span class="n">Error</span><span class="p">(</span><span class="n">message</span> <span class="p">=</span> <span class="n">exception</span><span class="p">.</span><span class="n">message</span><span class="p">.</span><span class="n">orEmpty</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="justify">
+<a href="https://github.com/knowledgeescalation/OpenNannyApp/blob/master/src/main/java/com/example/opennannyapp/ui/viewModels/LedViewModel.kt">This</a> ViewModel manages the lighting state, allowing for toggling between day and night modes.
+</div>
+
+<h2 id="creating-the-video-screen">Creating the Video Screen</h2>
+<p>The <a href="https://github.com/knowledgeescalation/OpenNannyApp/blob/master/src/main/java/com/example/opennannyapp/VideoActivity.kt">video screen</a> combines WebRTC video streaming with lighting controls:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="nd">@Composable</span>
+</span></span><span class="line"><span class="cl"><span class="k">fun</span> <span class="nf">VideoScreen</span><span class="p">(</span><span class="n">webRTCsession</span><span class="p">:</span> <span class="n">WebRTC</span><span class="p">,</span> <span class="n">viewModel</span><span class="p">:</span> <span class="n">LedViewModel</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">var</span> <span class="py">sliderPosition</span> <span class="k">by</span> <span class="n">remember</span> <span class="p">{</span> <span class="n">mutableStateOf</span><span class="p">(</span><span class="m">0f</span><span class="p">)</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">var</span> <span class="py">isOn</span> <span class="k">by</span> <span class="n">remember</span> <span class="p">{</span> <span class="n">mutableStateOf</span><span class="p">(</span><span class="k">false</span><span class="p">)</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">val</span> <span class="py">initState</span> <span class="p">=</span> <span class="n">viewModel</span><span class="p">.</span><span class="n">initState</span><span class="p">.</span><span class="n">collectAsState</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">val</span> <span class="py">state</span> <span class="p">=</span> <span class="n">viewModel</span><span class="p">.</span><span class="n">state</span><span class="p">.</span><span class="n">collectAsState</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">LaunchedEffect</span><span class="p">(</span><span class="n">Unit</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">webRTCsession</span><span class="p">.</span><span class="n">onSessionScreenReady</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">DisposableEffect</span><span class="p">(</span><span class="n">Unit</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">onDispose</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">webRTCsession</span><span class="p">.</span><span class="n">destroy</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">Box</span><span class="p">(</span><span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="n">fillMaxSize</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">val</span> <span class="py">remoteVideoTrackState</span> <span class="k">by</span> <span class="n">webRTCsession</span><span class="p">.</span><span class="n">remoteVideoTrackFlow</span><span class="p">.</span><span class="n">collectAsStateWithLifecycle</span><span class="p">(</span><span class="k">null</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">val</span> <span class="py">remoteVideoTrack</span> <span class="p">=</span> <span class="n">remoteVideoTrackState</span>
+</span></span><span class="line"><span class="cl">        <span class="k">val</span> <span class="py">remoteAudioTrackState</span> <span class="k">by</span> <span class="n">webRTCsession</span><span class="p">.</span><span class="n">remoteAudioTrackFlow</span><span class="p">.</span><span class="n">collectAsStateWithLifecycle</span><span class="p">(</span><span class="k">null</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">val</span> <span class="py">remoteAudioTrack</span> <span class="p">=</span> <span class="n">remoteAudioTrackState</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">remoteAudioTrack</span> <span class="o">!=</span> <span class="k">null</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">AudioRenderer</span><span class="p">(</span><span class="n">audioTrack</span> <span class="p">=</span> <span class="n">remoteAudioTrack</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">remoteVideoTrack</span> <span class="o">!=</span> <span class="k">null</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">VideoRenderer</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">eglContext</span> <span class="p">=</span> <span class="n">webRTCsession</span><span class="p">.</span><span class="n">eglBaseContext</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">videoTrack</span> <span class="p">=</span> <span class="n">remoteVideoTrack</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="n">align</span><span class="p">(</span><span class="nc">Alignment</span><span class="p">.</span><span class="n">Center</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Column</span><span class="p">(</span><span class="n">verticalArrangement</span> <span class="p">=</span> <span class="nc">Arrangement</span><span class="p">.</span><span class="n">Bottom</span><span class="p">,</span> <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="n">align</span><span class="p">(</span><span class="nc">Alignment</span><span class="p">.</span><span class="n">Center</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">CircularProgressIndicator</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="c1">// LED control UI implementation
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">Box</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">modifier</span> <span class="p">=</span> <span class="n">Modifier</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="n">fillMaxSize</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="n">padding</span><span class="p">(</span><span class="n">bottom</span> <span class="p">=</span> <span class="m">32.</span><span class="n">dp</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">contentAlignment</span> <span class="p">=</span> <span class="nc">Alignment</span><span class="p">.</span><span class="n">BottomCenter</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Implementation of day/night mode slider control
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">when</span><span class="p">(</span><span class="k">val</span> <span class="py">stateInitValue</span> <span class="p">=</span> <span class="n">initState</span><span class="p">.</span><span class="k">value</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">is</span> <span class="nc">LedState</span><span class="p">.</span><span class="n">Success</span> <span class="p">-&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">// Update slider based on current LED state
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="k">if</span><span class="p">(</span><span class="n">stateInitValue</span><span class="p">.</span><span class="n">status</span> <span class="o">==</span> <span class="s2">&#34;day&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">sliderPosition</span> <span class="p">=</span> <span class="m">0f</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">isOn</span> <span class="p">=</span> <span class="k">false</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span><span class="p">(</span><span class="n">stateInitValue</span><span class="p">.</span><span class="n">status</span> <span class="o">==</span> <span class="s2">&#34;night&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">sliderPosition</span> <span class="p">=</span> <span class="m">1f</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">isOn</span> <span class="p">=</span> <span class="k">true</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    
+</span></span><span class="line"><span class="cl">                    <span class="c1">// Slider UI for controlling day/night mode
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="n">Row</span><span class="p">(</span><span class="n">verticalAlignment</span> <span class="p">=</span> <span class="nc">Alignment</span><span class="p">.</span><span class="n">CenterVertically</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">// UI implementation for day/night slider
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                        <span class="n">Image</span><span class="p">(</span><span class="n">painter</span> <span class="p">=</span> <span class="n">painterResource</span><span class="p">(</span><span class="n">id</span> <span class="p">=</span> <span class="nc">R</span><span class="p">.</span><span class="n">drawable</span><span class="p">.</span><span class="n">sun</span><span class="p">),</span> <span class="n">contentDescription</span> <span class="p">=</span> <span class="s2">&#34;sun&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">Slider</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                            <span class="k">value</span> <span class="p">=</span> <span class="n">sliderPosition</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">onValueChange</span> <span class="p">=</span> <span class="p">{</span> <span class="cm">/* update slider position */</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">onValueChangeFinished</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                                <span class="n">isOn</span> <span class="p">=</span> <span class="n">sliderPosition</span> <span class="p">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="m">0.5f</span>
+</span></span><span class="line"><span class="cl">                                <span class="n">sliderPosition</span> <span class="p">=</span> <span class="k">if</span> <span class="p">(</span><span class="n">isOn</span><span class="p">)</span> <span class="m">1f</span> <span class="k">else</span> <span class="m">0f</span>
+</span></span><span class="line"><span class="cl">                                <span class="k">if</span><span class="p">(</span><span class="n">isOn</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                                    <span class="n">viewModel</span><span class="p">.</span><span class="n">sendCmd</span><span class="p">(</span><span class="s2">&#34;night&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                                    <span class="n">viewModel</span><span class="p">.</span><span class="n">sendCmd</span><span class="p">(</span><span class="s2">&#34;day&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">Image</span><span class="p">(</span><span class="n">painter</span> <span class="p">=</span> <span class="n">painterResource</span><span class="p">(</span><span class="n">id</span> <span class="p">=</span> <span class="nc">R</span><span class="p">.</span><span class="n">drawable</span><span class="p">.</span><span class="n">moon</span><span class="p">),</span> <span class="n">contentDescription</span> <span class="p">=</span> <span class="s2">&#34;moon&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// Handle loading and error states
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="justify">
+This screen integrates both WebRTC video rendering and lighting controls in a unified interface, demonstrating how to combine multiple features in a single screen.
+</div>
+
+<h2 id="building-the-music-player">Building the Music Player</h2>
+<p>The music player allows playing lullabies and other audio content for the baby.</p>
+<h3 id="implementing-the-music-selection-screen">Implementing the Music Selection Screen</h3>
+<p>First, we create a <a href="https://github.com/knowledgeescalation/OpenNannyApp/blob/master/src/main/java/com/example/opennannyapp/MusicActivity.kt#L137">directory browser</a> to select music:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="nd">@Composable</span>
+</span></span><span class="line"><span class="cl"><span class="k">fun</span> <span class="nf">DirectoriesScreen</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dirState</span><span class="p">:</span> <span class="n">DirState</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">onDirectorySelected</span><span class="p">:</span> <span class="p">(</span><span class="n">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Unit</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Box</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">modifier</span> <span class="p">=</span> <span class="n">Modifier</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">fillMaxSize</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">padding</span><span class="p">(</span><span class="m">16.</span><span class="n">dp</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">contentAlignment</span> <span class="p">=</span> <span class="nc">Alignment</span><span class="p">.</span><span class="n">Center</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Column</span><span class="p">(</span><span class="n">horizontalAlignment</span> <span class="p">=</span> <span class="nc">Alignment</span><span class="p">.</span><span class="n">CenterHorizontally</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">text</span> <span class="p">=</span> <span class="s2">&#34;Music&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">style</span> <span class="p">=</span> <span class="nc">MaterialTheme</span><span class="p">.</span><span class="n">typography</span><span class="p">.</span><span class="n">headlineMedium</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">            <span class="n">Spacer</span><span class="p">(</span><span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="n">height</span><span class="p">(</span><span class="m">40.</span><span class="n">dp</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">            <span class="k">when</span> <span class="p">(</span><span class="n">dirState</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">is</span> <span class="nc">DirState</span><span class="p">.</span><span class="n">Success</span> <span class="o">-&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">DirectoryList</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">directories</span> <span class="p">=</span> <span class="n">dirState</span><span class="p">.</span><span class="n">list</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">onDirectorySelected</span> <span class="p">=</span> <span class="n">onDirectorySelected</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// Handle loading and error states
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>This screen shows available music directories and handles navigation to individual songs.</p>
+<h3 id="implementing-the-music-player-controls">Implementing the Music Player Controls</h3>
+<p>The <a href="https://github.com/knowledgeescalation/OpenNannyApp/blob/master/src/main/java/com/example/opennannyapp/MusicActivity.kt#L387">music player</a> screen provides playback controls:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="nd">@Composable</span>
+</span></span><span class="line"><span class="cl"><span class="k">fun</span> <span class="nf">MediaPlayerScreen</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">directory</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">songName</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">onStop</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Unit</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">viewModel</span><span class="p">:</span> <span class="n">MusicViewModel</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">val</span> <span class="py">songState</span> <span class="k">by</span> <span class="n">viewModel</span><span class="p">.</span><span class="n">songState</span><span class="p">.</span><span class="n">collectAsState</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">var</span> <span class="py">volume</span> <span class="k">by</span> <span class="n">remember</span> <span class="p">{</span> <span class="n">mutableFloatStateOf</span><span class="p">(</span><span class="m">0.0f</span><span class="p">)</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">var</span> <span class="py">progress</span> <span class="k">by</span> <span class="n">remember</span> <span class="p">{</span> <span class="n">mutableFloatStateOf</span><span class="p">(</span><span class="m">0.0f</span><span class="p">)</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">var</span> <span class="py">progressTxt</span> <span class="k">by</span> <span class="n">remember</span> <span class="p">{</span> <span class="n">mutableLongStateOf</span><span class="p">(</span><span class="m">0.</span><span class="n">toLong</span><span class="p">())</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// Start playback when screen is shown if not already playing
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">LaunchedEffect</span><span class="p">(</span><span class="n">songName</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">songState</span> <span class="o">!is</span> <span class="nc">SongState</span><span class="p">.</span><span class="n">Playing</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">viewModel</span><span class="p">.</span><span class="n">playSong</span><span class="p">(</span><span class="n">songName</span><span class="p">=</span><span class="n">songName</span><span class="p">,</span> <span class="n">directory</span> <span class="p">=</span> <span class="n">directory</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="c1">// Update progress periodically
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">while</span> <span class="p">(</span><span class="k">true</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">delay</span><span class="p">(</span><span class="m">1000</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">songState</span> <span class="k">is</span> <span class="nc">SongState</span><span class="p">.</span><span class="n">Playing</span> <span class="p">&amp;</span><span class="n">amp</span><span class="p">;&amp;</span><span class="n">amp</span><span class="p">;</span> <span class="p">!(</span><span class="n">songState</span> <span class="k">as</span> <span class="nc">SongState</span><span class="p">.</span><span class="n">Playing</span><span class="p">).</span><span class="n">isPaused</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">val</span> <span class="py">myDuration</span> <span class="p">=</span> <span class="p">(</span><span class="n">songState</span> <span class="k">as</span> <span class="nc">SongState</span><span class="p">.</span><span class="n">Playing</span><span class="p">).</span><span class="n">duration</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">progressTxt</span> <span class="p">&lt;</span> <span class="n">myDuration</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">progressTxt</span> <span class="o">+=</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">progress</span> <span class="p">=</span> <span class="n">progressTxt</span><span class="p">.</span><span class="n">toFloat</span><span class="p">()</span> <span class="p">/</span> <span class="n">myDuration</span><span class="p">.</span><span class="n">toFloat</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">Column</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">modifier</span> <span class="p">=</span> <span class="n">Modifier</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">fillMaxSize</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">padding</span><span class="p">(</span><span class="m">16.</span><span class="n">dp</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">horizontalAlignment</span> <span class="p">=</span> <span class="nc">Alignment</span><span class="p">.</span><span class="n">CenterHorizontally</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Player UI implementation with progress bar, play/pause/stop buttons, and volume control
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        
+</span></span><span class="line"><span class="cl">        <span class="k">when</span> <span class="p">(</span><span class="n">songState</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">is</span> <span class="nc">SongState</span><span class="p">.</span><span class="n">Playing</span> <span class="o">-&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// Display progress bar
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">Slider</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">value</span> <span class="p">=</span> <span class="n">progress</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">onValueChange</span> <span class="p">=</span> <span class="p">{</span> <span class="cm">/* update progress UI */</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">onValueChangeFinished</span> <span class="p">=</span> <span class="p">{</span> <span class="n">viewModel</span><span class="p">.</span><span class="n">rewindSong</span><span class="p">(</span><span class="n">progressTxt</span><span class="p">)</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">)</span>
+</span></span><span class="line"><span class="cl">                
+</span></span><span class="line"><span class="cl">                <span class="c1">// Display playback controls
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">Row</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">modifier</span> <span class="p">=</span> <span class="nc">Modifier</span><span class="p">.</span><span class="n">fillMaxWidth</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">horizontalArrangement</span> <span class="p">=</span> <span class="nc">Arrangement</span><span class="p">.</span><span class="n">SpaceEvenly</span>
+</span></span><span class="line"><span class="cl">                <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">// Stop button
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="n">IconButton</span><span class="p">(</span><span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">viewModel</span><span class="p">.</span><span class="n">stopSong</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">onStop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">})</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">Icon</span><span class="p">(</span><span class="n">imageVector</span> <span class="p">=</span> <span class="nc">Icons</span><span class="p">.</span><span class="nc">Default</span><span class="p">.</span><span class="n">Stop</span><span class="p">,</span> <span class="n">contentDescription</span> <span class="p">=</span> <span class="s2">&#34;Stop&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    
+</span></span><span class="line"><span class="cl">                    <span class="c1">// Play/Pause button
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="n">IconButton</span><span class="p">(</span><span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">if</span> <span class="p">((</span><span class="n">songState</span> <span class="k">as</span> <span class="nc">SongState</span><span class="p">.</span><span class="n">Playing</span><span class="p">).</span><span class="n">isPaused</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">viewModel</span><span class="p">.</span><span class="n">resumeSong</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">viewModel</span><span class="p">.</span><span class="n">pauseSong</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">})</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">Icon</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">imageVector</span> <span class="p">=</span> <span class="k">if</span> <span class="p">((</span><span class="n">songState</span> <span class="k">as</span> <span class="nc">SongState</span><span class="p">.</span><span class="n">Playing</span><span class="p">).</span><span class="n">isPaused</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                                <span class="nc">Icons</span><span class="p">.</span><span class="nc">Default</span><span class="p">.</span><span class="n">PlayArrow</span> <span class="k">else</span> <span class="nc">Icons</span><span class="p">.</span><span class="nc">Default</span><span class="p">.</span><span class="n">Pause</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">contentDescription</span> <span class="p">=</span> <span class="k">if</span> <span class="p">((</span><span class="n">songState</span> <span class="k">as</span> <span class="nc">SongState</span><span class="p">.</span><span class="n">Playing</span><span class="p">).</span><span class="n">isPaused</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">                                <span class="s2">&#34;Resume&#34;</span> <span class="k">else</span> <span class="s2">&#34;Pause&#34;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                
+</span></span><span class="line"><span class="cl">                <span class="c1">// Volume control
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">Slider</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">value</span> <span class="p">=</span> <span class="n">volume</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">onValueChange</span> <span class="p">=</span> <span class="p">{</span> <span class="n">volume</span> <span class="p">=</span> <span class="k">it</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">onValueChangeFinished</span> <span class="p">=</span> <span class="p">{</span> <span class="n">viewModel</span><span class="p">.</span><span class="n">setVolume</span><span class="p">(</span><span class="n">volume</span><span class="p">)</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Handle other states
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="justify">
+This implementation provides a complete music player with progress tracking, play/pause/stop controls, and volume adjustment.
+</div>
+
+<h2 id="implementing-the-music-viewmodel">Implementing the Music ViewModel</h2>
+<p>The <a href="https://github.com/knowledgeescalation/OpenNannyApp/blob/master/src/main/java/com/example/opennannyapp/ui/viewModels/MusicViewModel.kt#L16">Music</a> ViewModel manages the complex state of music playback:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MusicViewModel</span><span class="p">(</span><span class="k">private</span> <span class="k">val</span> <span class="py">api</span><span class="p">:</span> <span class="n">ApiService</span><span class="p">)</span> <span class="p">:</span> <span class="n">ViewModel</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">val</span> <span class="py">dirState</span> <span class="p">=</span> <span class="n">MutableStateFlow</span><span class="p">&lt;</span><span class="n">DirState</span><span class="p">&gt;(</span><span class="nc">DirState</span><span class="p">.</span><span class="n">Loading</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">val</span> <span class="py">mp3State</span> <span class="p">=</span> <span class="n">MutableStateFlow</span><span class="p">&lt;</span><span class="n">Mp3State</span><span class="p">&gt;(</span><span class="n">Mp3State</span><span class="p">.</span><span class="n">Loading</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">val</span> <span class="py">songState</span> <span class="p">=</span> <span class="n">MutableStateFlow</span><span class="p">&lt;</span><span class="n">SongState</span><span class="p">&gt;(</span><span class="nc">SongState</span><span class="p">.</span><span class="n">Initial</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">fun</span> <span class="nf">playSong</span><span class="p">(</span><span class="n">songName</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">viewModelScope</span><span class="p">.</span><span class="n">launch</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="n">IO</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">songState</span><span class="p">.</span><span class="k">value</span> <span class="p">=</span> <span class="nc">SongState</span><span class="p">.</span><span class="n">Loading</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">val</span> <span class="py">response</span> <span class="p">=</span> <span class="n">api</span><span class="p">.</span><span class="n">songPlay</span><span class="p">(</span><span class="n">MusicRequest</span><span class="p">(</span><span class="n">cmd</span> <span class="p">=</span> <span class="s2">&#34;play&#34;</span><span class="p">,</span> <span class="n">parameters</span> <span class="p">=</span> <span class="s2">&#34;</span><span class="si">$directory</span><span class="s2">/</span><span class="si">$songName</span><span class="s2">.mp3&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">status</span> <span class="o">==</span> <span class="s2">&#34;OK&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">songState</span><span class="p">.</span><span class="k">value</span> <span class="p">=</span> <span class="nc">SongState</span><span class="p">.</span><span class="n">Playing</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">songName</span> <span class="p">=</span> <span class="n">songName</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">directory</span> <span class="p">=</span> <span class="n">directory</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">duration</span> <span class="p">=</span> <span class="n">response</span><span class="p">.</span><span class="n">duration</span> <span class="o">?:</span> <span class="m">0L</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">currentProgress</span> <span class="p">=</span> <span class="m">0L</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">volume</span> <span class="p">=</span> <span class="n">response</span><span class="p">.</span><span class="n">volume</span> <span class="o">?:</span> <span class="m">0.0f</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">startStatusUpdates</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">songState</span><span class="p">.</span><span class="k">value</span> <span class="p">=</span> <span class="nc">SongState</span><span class="p">.</span><span class="n">Error</span><span class="p">(</span><span class="n">message</span> <span class="p">=</span> <span class="n">response</span><span class="p">.</span><span class="n">status</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">e</span><span class="p">:</span> <span class="n">Exception</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">songState</span><span class="p">.</span><span class="k">value</span> <span class="p">=</span> <span class="nc">SongState</span><span class="p">.</span><span class="n">Error</span><span class="p">(</span><span class="n">message</span> <span class="p">=</span> <span class="n">e</span><span class="p">.</span><span class="n">message</span><span class="p">.</span><span class="n">orEmpty</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// Implement pause, resume, stop, rewind, and volume control methods
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">fun</span> <span class="nf">startStatusUpdates</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">viewModelScope</span><span class="p">.</span><span class="n">launch</span><span class="p">(</span><span class="nc">Dispatchers</span><span class="p">.</span><span class="n">IO</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">while</span> <span class="p">(</span><span class="n">songState</span><span class="p">.</span><span class="k">value</span> <span class="k">is</span> <span class="nc">SongState</span><span class="p">.</span><span class="n">Playing</span> <span class="o">&amp;&amp;</span> <span class="p">!(</span><span class="n">songState</span><span class="p">.</span><span class="k">value</span> <span class="k">as</span> <span class="nc">SongState</span><span class="p">.</span><span class="n">Playing</span><span class="p">).</span><span class="n">isPaused</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">delay</span><span class="p">(</span><span class="m">5000</span><span class="p">)</span> <span class="c1">// Update every 5 seconds
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">updateSongStatus</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">suspend</span> <span class="k">fun</span> <span class="nf">updateSongStatus</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">val</span> <span class="py">response</span> <span class="p">=</span> <span class="n">api</span><span class="p">.</span><span class="n">songStatus</span><span class="p">(</span><span class="n">MusicRequest</span><span class="p">(</span><span class="n">cmd</span> <span class="p">=</span> <span class="s2">&#34;status&#34;</span><span class="p">,</span> <span class="n">parameters</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Update state based on response
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">exception</span><span class="p">:</span> <span class="n">Exception</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Handle errors
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="justify">
+This ViewModel manages the complex state transitions of music playback and provides periodic status updates to keep the UI in sync with the actual playback state on the server.
+</div>
+
+<h2 id="application-initialization">Application Initialization</h2>
+<p>The app initialization ties everything together:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">OpenNannyApp</span> <span class="p">:</span> <span class="n">Application</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">lateinit</span> <span class="k">var</span> <span class="py">networkModule</span><span class="p">:</span> <span class="n">NetworkModule</span>
+</span></span><span class="line"><span class="cl">    <span class="k">lateinit</span> <span class="k">var</span> <span class="py">serviceApi</span><span class="p">:</span> <span class="n">ApiService</span>
+</span></span><span class="line"><span class="cl">    <span class="k">lateinit</span> <span class="k">var</span> <span class="py">api</span><span class="n">_ip</span><span class="p">:</span> <span class="n">String</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreate</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">super</span><span class="p">.</span><span class="n">onCreate</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">api_ip</span> <span class="p">=</span> <span class="n">getString</span><span class="p">(</span><span class="nc">R</span><span class="p">.</span><span class="n">string</span><span class="p">.</span><span class="n">api_ip</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">val</span> <span class="py">api</span><span class="n">_user</span> <span class="p">=</span> <span class="n">getString</span><span class="p">(</span><span class="nc">R</span><span class="p">.</span><span class="n">string</span><span class="p">.</span><span class="n">api_user</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">val</span> <span class="py">api</span><span class="n">_pass</span> <span class="p">=</span> <span class="n">getString</span><span class="p">(</span><span class="nc">R</span><span class="p">.</span><span class="n">string</span><span class="p">.</span><span class="n">api_pass</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="n">networkModule</span> <span class="p">=</span> <span class="n">NetworkModule</span><span class="p">(</span><span class="n">api_ip</span><span class="p">=</span><span class="n">api_ip</span><span class="p">,</span> <span class="n">api_user</span><span class="p">=</span><span class="n">api_user</span><span class="p">,</span> <span class="n">api_pass</span><span class="p">=</span><span class="n">api_pass</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">serviceApi</span> <span class="p">=</span> <span class="n">networkModule</span><span class="p">.</span><span class="n">serviceAPI</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>This initializes the network components with credentials stored in string resources, making them available throughout the app.</p>
+<h2 id="conclusion-putting-it-all-together">Conclusion: Putting It All Together</h2>
+<div class="justify">
+Building a connected baby monitor app involves multiple complex components working together seamlessly. Through this tutorial, we&rsquo;ve demonstrated how to:
+</div>
+
+<ol>
+<li>Implement a secure API communication layer with token authentication</li>
+<li>Set up real-time video streaming using WebRTC</li>
+<li>Create a responsive UI with Jetpack Compose</li>
+<li>Build feature-specific ViewModels for state management</li>
+<li>Implement a music player with full playback control</li>
+<li>Add environmental monitoring through sensor data display</li>
+<li>Include lighting control with day/night modes</li>
+</ol>
+<div class="justify">
+The architecture we&rsquo;ve built is both robust and extensible. You could further enhance this application by adding:
+</div>
+
+<ul>
+<li>Push notifications for important events (temperature alerts, noise detection)</li>
+<li>Historical data logging and visualization</li>
+<li>Multiple camera support</li>
+<li>Custom lullaby playlists</li>
+<li>Integration with smart home platforms</li>
+</ul>
+<div class="justify">
+<p>By following modern Android development practices and leveraging powerful libraries like Retrofit, WebRTC, and Jetpack Compose, we&rsquo;ve created a sophisticated yet maintainable application that demonstrates how to build complex connected systems.</p>
+<p>The complete implementation showcases the power of Kotlin coroutines for asynchronous operations, Flow for reactive programming, and MVVM architecture for clean separation of concerns - all essential skills for modern Android development.</p>
+
+</div>
+
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/knowledgeescalation" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2025 Knowledge Escalation.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script src="https://knowledgeescalation.com/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>

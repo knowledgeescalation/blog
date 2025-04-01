@@ -10,10 +10,10 @@
 <meta name="application-name" content="Open Nanny | Knowledge Escalation" />
 <meta property="og:site_name" content="Knowledge Escalation" />
 
-<meta name="description" content="Secure, Smart, and Open: Building a Feature-Rich Raspberry Pi Baby Monitor with Real-Time Streaming, Environmental Monitoring, and Lullaby Playback for Modern Parents.">
-<meta itemprop="description" content="Secure, Smart, and Open: Building a Feature-Rich Raspberry Pi Baby Monitor with Real-Time Streaming, Environmental Monitoring, and Lullaby Playback for Modern Parents." />
-<meta property="og:description" content="Secure, Smart, and Open: Building a Feature-Rich Raspberry Pi Baby Monitor with Real-Time Streaming, Environmental Monitoring, and Lullaby Playback for Modern Parents." />
-<meta name="twitter:description" content="Secure, Smart, and Open: Building a Feature-Rich Raspberry Pi Baby Monitor with Real-Time Streaming, Environmental Monitoring, and Lullaby Playback for Modern Parents." />
+<meta name="description" content="Build a Secure Raspberry Pi Baby Monitor with Real-Time Streaming">
+<meta itemprop="description" content="Build a Secure Raspberry Pi Baby Monitor with Real-Time Streaming" />
+<meta property="og:description" content="Build a Secure Raspberry Pi Baby Monitor with Real-Time Streaming" />
+<meta name="twitter:description" content="Build a Secure Raspberry Pi Baby Monitor with Real-Time Streaming" />
 
 <meta property="og:locale" content="en-us" />
 <meta name="language" content="en-us" />
@@ -29,8 +29,8 @@
     
 
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content=2025-03-19T00:00:00Z />
-    <meta property="article:published_time" content=2025-03-19T00:00:00Z />
+    <meta property="og:article:published_time" content=2025-04-01T00:00:00Z />
+    <meta property="article:published_time" content=2025-04-01T00:00:00Z />
     <meta property="og:url" content="https://knowledgeescalation.com/posts/open-nanny/" />
 
     
@@ -51,11 +51,11 @@
         "@type": "Person",
         "name": ""
         },
-        "datePublished": "2025-03-19",
-        "description": "Secure, Smart, and Open: Building a Feature-Rich Raspberry Pi Baby Monitor with Real-Time Streaming, Environmental Monitoring, and Lullaby Playback for Modern Parents.",
-        "wordCount":  34 ,
+        "datePublished": "2025-04-01",
+        "description": "Build a Secure Raspberry Pi Baby Monitor with Real-Time Streaming",
+        "wordCount":  3365 ,
         "mainEntityOfPage": "True",
-        "dateModified": "2025-03-19",
+        "dateModified": "2025-04-01",
         "image": {
         "@type": "imageObject",
         "url": ""
@@ -68,31 +68,31 @@
     </script>
 
 
-<meta name="generator" content="Hugo 0.145.0">
+<meta name="generator" content="Hugo 0.139.0">
 
     
     <meta property="og:url" content="https://knowledgeescalation.com/posts/open-nanny/">
   <meta property="og:site_name" content="Knowledge Escalation">
   <meta property="og:title" content="Open Nanny">
-  <meta property="og:description" content="Secure, Smart, and Open: Building a Feature-Rich Raspberry Pi Baby Monitor with Real-Time Streaming, Environmental Monitoring, and Lullaby Playback for Modern Parents.">
+  <meta property="og:description" content="Build a Secure Raspberry Pi Baby Monitor with Real-Time Streaming">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-03-19T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-03-19T00:00:00+00:00">
+    <meta property="article:published_time" content="2025-04-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-01T00:00:00+00:00">
 
 
     
     
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Open Nanny">
-  <meta name="twitter:description" content="Secure, Smart, and Open: Building a Feature-Rich Raspberry Pi Baby Monitor with Real-Time Streaming, Environmental Monitoring, and Lullaby Playback for Modern Parents.">
+  <meta name="twitter:description" content="Build a Secure Raspberry Pi Baby Monitor with Real-Time Streaming">
 
 
     
 
     <link rel="canonical" href="https://knowledgeescalation.com/posts/open-nanny/">
-    <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
+    <link href="/style.min.8af2a6e1f212af88de596042bddb8322249c4d0ad45a782bb17d9f0c5047a9f9.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
     
@@ -190,7 +190,7 @@ stroke-linejoin="round" class="feather feather-home">
                 
                 
                 <div class="post-meta">
-                    <time datetime="2025-03-19T00:00:00&#43;00:00" itemprop="datePublished"> Mar 19, 2025 </time>
+                    <time datetime="2025-04-01T00:00:00&#43;00:00" itemprop="datePublished"> Apr 1, 2025 </time>
                 </div>
                 
             </header>
@@ -198,16 +198,919 @@ stroke-linejoin="round" class="feather feather-home">
     
     <details class="toc" ZgotmplZ>
         <summary><b>Table of Contents</b></summary>
-        <nav id="TableOfContents"></nav>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#opennannyapi-features">OpenNannyApi Features:</a></li>
+        <li><a href="#opennannyapp-features">OpenNannyApp Features:</a></li>
+      </ul>
+    </li>
+    <li><a href="#hardware-requirements">Hardware Requirements</a></li>
+    <li><a href="#getting-started-basic-setup">Getting Started: Basic Setup</a></li>
+    <li><a href="#environmental-sensor-installation">Environmental Sensor Installation</a>
+      <ul>
+        <li><a href="#setting-up-the-co2-and-temperature-sensor">Setting Up the CO2 and Temperature Sensor</a></li>
+        <li><a href="#installing-the-ups-power-management-system">Installing the UPS Power Management System</a></li>
+      </ul>
+    </li>
+    <li><a href="#audio-system-configuration">Audio System Configuration</a>
+      <ul>
+        <li><a href="#microphone-and-speaker-wiring">Microphone and Speaker Wiring</a></li>
+        <li><a href="#eeprom-configuration-for-audio-hat-emulation">EEPROM Configuration for Audio HAT Emulation</a></li>
+      </ul>
+    </li>
+    <li><a href="#camera-and-night-vision-setup">Camera and Night Vision Setup</a>
+      <ul>
+        <li><a href="#installing-the-camera-module">Installing the Camera Module</a></li>
+        <li><a href="#ir-led-night-vision-control">IR LED Night Vision Control</a></li>
+      </ul>
+    </li>
+    <li><a href="#wifi-power-management-fix">WiFi Power Management Fix</a></li>
+    <li><a href="#setting-up-the-opennannyapi-software">Setting Up the OpenNannyApi Software</a>
+      <ul>
+        <li><a href="#creating-ssl-certificates-for-secure-communication">Creating SSL Certificates for Secure Communication</a></li>
+        <li><a href="#configuring-the-influxdb-time-series-database">Configuring the InfluxDB Time-Series Database</a></li>
+        <li><a href="#integrating-sensors-with-the-database">Integrating Sensors with the Database</a></li>
+        <li><a href="#setting-up-the-rest-api-service">Setting Up the REST API Service</a></li>
+      </ul>
+    </li>
+    <li><a href="#configuring-the-opennannyapp">Configuring the OpenNannyApp</a></li>
+    <li><a href="#security-considerations-and-best-practices">Security Considerations and Best Practices</a></li>
+    <li><a href="#troubleshooting-common-issues">Troubleshooting Common Issues</a></li>
+    <li><a href="#conclusion-and-next-steps">Conclusion and Next Steps</a></li>
+  </ul>
+</nav>
     </details>
             <div class="page-content">
-                <p><img src="/posts/open-nanny/1.png" alt="XI"></p>
-<p>Secure, Smart, and Open: Building a Feature-Rich Raspberry Pi Baby Monitor with Real-Time Streaming, Environmental Monitoring, and Lullaby Playback for Modern Parents.</p>
-<p>..in progress</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">fun</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ret</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">ret</span>
-</span></span></code></pre></div>
+                <p><img alt="OpenNannyFront" src="/posts/open-nanny/1.jpg"></p>
+<div class="justify">
+Secure, Smart, and Open: Building a Feature-Rich Raspberry Pi Baby Monitor with Real-Time Streaming, Environmental Monitoring, and Lullaby Playback for Modern Parents.
+</div>
+
+<h2 id="introduction">Introduction</h2>
+<div class="justify">
+<p>Are you a tech-savvy parent looking for a secure, customizable, and affordable baby monitoring solution? Commercial baby monitors often come with limited features, security concerns, and high price tags. The <strong>OpenNanny</strong> project solves these problems by leveraging the versatility of Raspberry Pi to create a feature-rich baby monitor with capabilities that surpass many commercial options.</p>
+<p>This DIY smart baby monitor combines real-time video streaming, environmental monitoring, and lullaby playback in one integrated system. Whether you&rsquo;re concerned about indoor air quality, want secure video monitoring, or need a reliable way to play soothing sounds for your baby, OpenNanny delivers these features with the added benefits of complete privacy control and expandability.</p>
+<p>Even if you&rsquo;re new to Raspberry Pi projects, this step-by-step guide will help you build a professional-quality monitoring system that grows with your needs. The OpenNanny system consists of two main components.</p>
+
+</div>
+
+<ol>
+<li><a href="https://github.com/knowledgeescalation/OpenNannyApi.git"><strong>OpenNannyApi</strong></a>: The backend software that controls the Raspberry Pi hardware and provides a secure API for remote management.</li>
+<li><a href="https://github.com/knowledgeescalation/OpenNannyApp.git"><strong>OpenNannyApp</strong></a>: An Android application that connects to your OpenNanny device for monitoring and control.</li>
+</ol>
+<h3 id="opennannyapi-features">OpenNannyApi Features:</h3>
+<ul>
+<li><strong>Environmental Monitoring</strong>: Track CO2 levels, temperature, and humidity in real time.</li>
+<li><strong>Power Management</strong>: Monitor UPS status, including voltage, current, and battery percentage.</li>
+<li><strong>Video Streaming</strong>: Enjoy live video feeds with night mode via WebRTC.</li>
+<li><strong>Audio Communication</strong>: One-way audio streaming for seamless communication.</li>
+<li><strong>Music Player</strong>: Play lullabies with MP3 playback capabilities.</li>
+<li><strong>Secure API</strong>: Protect your data with JWT authentication and TLS encryption.</li>
+<li><strong>Data Storage</strong>: Store time-series data using InfluxDB for analysis.</li>
+</ul>
+<h3 id="opennannyapp-features">OpenNannyApp Features:</h3>
+<ul>
+<li>Real-time sensor data visualization (temperature, humidity, CO2 levels).</li>
+<li>Live video streaming from the Raspberry Pi camera.</li>
+<li>Music playback controls (play, pause, volume adjustment).</li>
+<li>Night light control for LED lighting.</li>
+</ul>
+<p><img src="main_activity.jpg" alt="main_activity" style="width:30%; height:auto;"
+title=" This is a delicious bowl of ice cream.">  <img src="sensors_activity.jpg" alt="sensors_activity" style="width:30%; height:auto;">  <img src="video_activity.jpg" alt="video_activity" style="width:30%; height:auto;"></p>
+<p><img src="music_activity_directory.jpg" alt="music_activity_directory" style="width:30%; height:auto;">  <img src="music_activity_songs.jpg" alt="music_activity_songs" style="width:30%; height:auto;">  <img src="music_activity_player.jpg" alt="music_activity_player" style="width:30%; height:auto;"></p>
+<hr>
+<h2 id="hardware-requirements">Hardware Requirements</h2>
+<p>Before starting this project, gather these components for a complete OpenNanny system.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Component</th>
+          <th style="text-align: left">Purpose</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Raspberry Pi Zero 2 WH</td>
+          <td style="text-align: left">Main processing unit</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">SD Card with Raspbian</td>
+          <td style="text-align: left">Operating system storage (Raspbian)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://wiki.dfrobot.com/SKU_SEN0536_Gravity_SCD41_Infrared_CO2_Sensor#target_9">DFRobot SEN0536</a> Sensor</td>
+          <td style="text-align: left">CO2, temperature, and humidity monitoring</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout/raspberry-pi-wiring-test">SPH0645LM4H</a> Microphones (x2)</td>
+          <td style="text-align: left">Audio input</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp/raspberry-pi-wiring">MAX98357A</a> Amplifier</td>
+          <td style="text-align: left">Audio output processing|</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://www.granvozchina.com/info/how-to-wire-speakers-in-parallel-series-and-98026087.html">speaker 1w 8 ohm</a> (x2)</td>
+          <td style="text-align: left">Audio playback</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">EEPROM (24LC256)</td>
+          <td style="text-align: left">HAT identification (only 128 bytes needed)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CSI Camera with IR Cut (OV5647)</td>
+          <td style="text-align: left">Video streaming with night vision capability</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3W IR LEDs (x2)</td>
+          <td style="text-align: left">Enhanced night vision illumination</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">NPN Transistors (2N2222) (x2)</td>
+          <td style="text-align: left">IR LED control circuits</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">1kΩ resistor (x2)</td>
+          <td style="text-align: left">IR LED control circuits</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4000mAh Battery</td>
+          <td style="text-align: left">Power supply</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://www.waveshare.com/wiki/UPS_HAT_(C)">UPS HAT (Waveshare 19739)</a></td>
+          <td style="text-align: left">Power management and monitoring</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="getting-started-basic-setup">Getting Started: Basic Setup</h2>
+<p>Before diving into the hardware assembly, set up your Raspberry Pi with the required software environment:</p>
+<ol>
+<li>Flash Raspbian OS to your SD card.</li>
+<li>Boot your Raspberry Pi and complete initial setup (setting locale, connecting to WiFi, etc.).</li>
+<li>Update your system packages:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update <span class="o">&amp;&amp;</span> sudo apt upgrade -y
+</span></span></code></pre></div><ol start="4">
+<li>Clone the OpenNanny repository:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh USER_NAME@NANNY_IP
+</span></span><span class="line"><span class="cl">git clone https://github.com/knowledgeescalation/OpenNannyApi
+</span></span></code></pre></div><h2 id="environmental-sensor-installation">Environmental Sensor Installation</h2>
+<div class="justify">
+The environmental sensing capabilities of OpenNanny provide valuable information about your baby&rsquo;s room conditions.
+</div>
+
+<p><img alt="OpenNannyTop" src="/posts/open-nanny/sensor_xi.jpg"></p>
+<h3 id="setting-up-the-co2-and-temperature-sensor">Setting Up the CO2 and Temperature Sensor</h3>
+<div class="justify">
+The <code>DFRobot SEN0536</code> is a Gravity-compatible sensor that measures carbon dioxide levels, temperature, and humidity - all critical environmental factors for a nursery.
+</div>
+
+<img src="sensors.png" alt="esensors" style="width:70%; height:auto;">
+<p>See: <a href="https://wiki.dfrobot.com/SKU_SEN0536_Gravity_SCD41_Infrared_CO2_Sensor#target_9">https://wiki.dfrobot.com/SKU_SEN0536_Gravity_SCD41_Infrared_CO2_Sensor#target_9</a></p>
+<ol>
+<li>Connect the sensor to the Raspberry Pi I2C pins:
+<ul>
+<li>Connect VCC to 3.3V</li>
+<li>Connect GND to ground</li>
+<li>Connect SDA to GPIO2 (SDA)</li>
+<li>Connect SCL to GPIO3 (SCL)</li>
+</ul>
+</li>
+<li>Verify the connection using the I2C detection tool:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo i2cdetect -y <span class="m">1</span>
+</span></span></code></pre></div><p>You should see the sensor at address <code>0x62</code> in the output table.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">     <span class="m">0</span>  <span class="m">1</span>  <span class="m">2</span>  <span class="m">3</span>  <span class="m">4</span>  <span class="m">5</span>  <span class="m">6</span>  <span class="m">7</span>  <span class="m">8</span>  <span class="m">9</span>  a  b  c  d  e  f
+</span></span><span class="line"><span class="cl">00:                         -- -- -- -- -- -- -- -- 
+</span></span><span class="line"><span class="cl">10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+</span></span><span class="line"><span class="cl">20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+</span></span><span class="line"><span class="cl">30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+</span></span><span class="line"><span class="cl">40: -- -- -- <span class="m">43</span> -- -- -- -- -- -- -- -- -- -- -- --  --&gt; UPS HAT
+</span></span><span class="line"><span class="cl">50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+</span></span><span class="line"><span class="cl">60: -- -- <span class="m">62</span> -- -- -- -- -- -- -- -- -- -- -- -- --  --&gt; co2 sensor
+</span></span><span class="line"><span class="cl">70: -- -- -- -- -- -- -- --
+</span></span></code></pre></div><ol start="3">
+<li>Test the sensor functionality with the provided script:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~/OpenNannyApi/sensors
+</span></span><span class="line"><span class="cl">python co2-test.py
+</span></span></code></pre></div><p>If working correctly, you&rsquo;ll see output showing CO2 concentration, temperature, and humidity readings.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Sensor begin successfully!!!
+</span></span><span class="line"><span class="cl">The current temperature compensation value : 4.00 C
+</span></span><span class="line"><span class="cl">Set the current environment altitude : <span class="m">130</span> m
+</span></span><span class="line"><span class="cl">Automatic calibration on!
+</span></span><span class="line"><span class="cl">Carbon dioxide concentration : <span class="m">953</span> ppm
+</span></span><span class="line"><span class="cl">Environment temperature : 22.23 C
+</span></span><span class="line"><span class="cl">Relative humidity : 47.64 RH
+</span></span></code></pre></div><p>See: <a href="https://github.com/knowledgeescalation/OpenNannyApi/blob/main/sensors/co2-test.py">https://github.com/knowledgeescalation/OpenNannyApi/blob/main/sensors/co2-test.py</a></p>
+<h3 id="installing-the-ups-power-management-system">Installing the UPS Power Management System</h3>
+<img src="ups.png" alt="ups" style="width:100%; height:auto;">
+<p>See: <a href="https://www.waveshare.com/wiki/UPS_HAT_(C)">https://www.waveshare.com/wiki/UPS_HAT_(C)</a>.</p>
+<p>The <code>UPS HAT</code> provides battery backup and power monitoring capabilities.</p>
+<ol>
+<li>Attach the UPS HAT to your Raspberry Pi GPIO pins.</li>
+<li>Secure with screws through the mounting holes.</li>
+<li>Connect your 4000mAh battery to the UPS HAT.</li>
+<li>Verify the connection with:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo i2cdetect -y <span class="m">1</span>
+</span></span></code></pre></div><p>The UPS should appear at address <code>0x43</code>.</p>
+<ol start="5">
+<li>Test the UPS functionality:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python ups-test.py
+</span></span></code></pre></div><p>You should see voltage, current, power, and battery percentage information.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Load Voltage:   3.652 V
+</span></span><span class="line"><span class="cl">Current:       -0.490 A
+</span></span><span class="line"><span class="cl">Power:          1.789 W
+</span></span><span class="line"><span class="cl">Percent:       54.3%
+</span></span></code></pre></div><p>See: <a href="https://github.com/knowledgeescalation/OpenNannyApi/blob/main/sensors/ups-test.py">https://github.com/knowledgeescalation/OpenNannyApi/blob/main/sensors/ups-test.py</a>.</p>
+<h2 id="audio-system-configuration">Audio System Configuration</h2>
+<div class="justify">
+Setting up the audio system for OpenNanny is more complex than other components because it requires configuring both input (microphones) and output (speakers) over the I2S interface.
+</div>
+
+<h3 id="microphone-and-speaker-wiring">Microphone and Speaker Wiring</h3>
+<p><img alt="wiring_mic_speakers" src="/posts/open-nanny/wiring_mic_speakers.png">
+See: <a href="https://www.hackster.io/shiva-siddharth/make-your-own-google-voice-hat-9f96ca">https://www.hackster.io/shiva-siddharth/make-your-own-google-voice-hat-9f96ca</a>.</p>
+<ol>
+<li>Connect the MEMS microphones (SPH0645LM4H) to the Raspberry Pi:
+<ul>
+<li>Connect VCC to 3.3V</li>
+<li>Connect GND to ground</li>
+<li>Connect BCLK to GPIO18</li>
+<li>Connect LRCLK to GPIO19</li>
+<li>Connect DATA to GPIO20</li>
+</ul>
+</li>
+<li>Connect the MAX98357A amplifier:
+<ul>
+<li>Connect VIN to 5V</li>
+<li>Connect GND to ground</li>
+<li>Connect BCLK to GPIO18 (shared with mic)</li>
+<li>Connect LRCLK to GPIO19 (shared with mic)</li>
+<li>Connect DIN to GPIO21</li>
+</ul>
+</li>
+<li>Connect your speakers to the amplifier output terminals (<a href="https://www.granvozchina.com/info/how-to-wire-speakers-in-parallel-series-and-98026087.html">parallel</a>).</li>
+</ol>
+<h3 id="eeprom-configuration-for-audio-hat-emulation">EEPROM Configuration for Audio HAT Emulation</h3>
+<img src="eeprom.png" alt="eeprom" style="width:30%; height:auto;"> 
+<p>To make both the microphones and speakers work together, we need to configure an EEPROM to emulate the <a href="https://aiyprojects.withgoogle.com/voice">Google AIY audioHAT</a>.</p>
+<ol>
+<li>
+<p>Connect the 24LC256 EEPROM to the Raspberry Pi:</p>
+<ul>
+<li>Connect VCC to 3.3V</li>
+<li>Connect GND to ground</li>
+<li>Connect SDA to GPIO0 (SDA0)</li>
+<li>Connect SCL to GPIO1 (SCL0)</li>
+</ul>
+</li>
+<li>
+<p>Verify the EEPROM connection:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo i2cdetect -y <span class="m">0</span>
+</span></span></code></pre></div><p>You should see a device at address <code>0x50</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="m">0</span>  <span class="m">1</span>  <span class="m">2</span>  <span class="m">3</span>  <span class="m">4</span>  <span class="m">5</span>  <span class="m">6</span>  <span class="m">7</span>  <span class="m">8</span>  <span class="m">9</span>  a  b  c  d  e  f
+</span></span><span class="line"><span class="cl">00:                         -- -- -- -- -- -- -- -- 
+</span></span><span class="line"><span class="cl">10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+</span></span><span class="line"><span class="cl">20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+</span></span><span class="line"><span class="cl">30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+</span></span><span class="line"><span class="cl">40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+</span></span><span class="line"><span class="cl">50: <span class="m">50</span> -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --&gt; EEPROM
+</span></span><span class="line"><span class="cl">60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+</span></span><span class="line"><span class="cl">70: -- -- -- -- -- -- -- -- 
+</span></span></code></pre></div><ol start="3">
+<li>Load the required kernel modules:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo modprobe i2c_dev
+</span></span><span class="line"><span class="cl">sudo modprobe at24
+</span></span></code></pre></div><ol start="4">
+<li>Create the device interface:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo su -
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;24c256 0x50&#34;</span> &gt; /sys/class/i2c-adapter/i2c-0/new_device
+</span></span></code></pre></div><p>You should see your device.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ls /sys/class/i2c-adapter/i2c-0/
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">0-0050	delete_device  device  i2c-dev	mux_device  name  new_device  of_node  power  subsystem  uevent
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ls /sys/class/i2c-adapter/i2c-0/0-0050/
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">0-00502  driver  eeprom  modalias  name  power	subsystem  supplier:regulator:regulator.0  uevent
+</span></span></code></pre></div><ol start="5">
+<li>You can play with <a href="https://github.com/raspberrypi/hats">HAT tools</a> or simply use my blob (<code>voicehat.bin</code>).</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">strings OpenNannyApi/voicehat.bin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">R-Pi
+</span></span><span class="line"><span class="cl">Google, Inc.Google AIY audioHAT Board v1
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">xxd OpenNannyApi/voicehat.bin 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">00000000: 522d <span class="m">5069</span> <span class="m">0100</span> <span class="m">0200</span> 7c00 <span class="m">0000</span> <span class="m">0100</span> <span class="m">0000</span>  R-Pi....<span class="p">|</span>.......
+</span></span><span class="line"><span class="cl">00000010: <span class="m">4000</span> <span class="m">0000</span> 5e69 <span class="m">9506</span> <span class="m">3673</span> da92 <span class="m">9142</span> be31  @...^i..6s...B.1
+</span></span><span class="line"><span class="cl">00000020: 52b7 df0d <span class="m">0100</span> <span class="m">0100</span> 0c1c 476f 6f67 6c65  R.........Google
+</span></span><span class="line"><span class="cl">00000030: 2c20 496e 632e 476f 6f67 6c65 <span class="m">2041</span> <span class="m">4959</span>  , Inc.Google AIY
+</span></span><span class="line"><span class="cl">00000040: <span class="m">2061</span> <span class="m">7564</span> 696f <span class="m">4841</span> <span class="m">5420</span> 426f <span class="m">6172</span> <span class="m">6420</span>   audioHAT Board 
+</span></span><span class="line"><span class="cl">00000050: <span class="m">7631</span> <span class="m">9290</span> <span class="m">0200</span> <span class="m">0100</span> <span class="m">2000</span> <span class="m">0000</span> <span class="m">0000</span> <span class="m">0000</span>  v1...... .......
+</span></span><span class="line"><span class="cl">00000060: <span class="m">0000</span> <span class="m">0000</span> <span class="m">0000</span> <span class="m">0000</span> <span class="m">0000</span> <span class="m">0000</span> <span class="m">0000</span> <span class="m">0000</span>  ................
+</span></span><span class="line"><span class="cl">00000070: <span class="m">0000</span> <span class="m">0000</span> <span class="m">0000</span> <span class="m">0000</span> <span class="m">0000</span> ed6e ffff ffff  ...........n....
+</span></span></code></pre></div><p>Write the provided configuration data to the EEPROM:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo dd <span class="k">if</span><span class="o">=</span>OpenNannyApi/voicehat.bin <span class="nv">of</span><span class="o">=</span>/sys/class/i2c-adapter/i2c-0/0-0050/eeprom
+</span></span></code></pre></div><p>Verify.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dd <span class="k">if</span><span class="o">=</span>/sys/class/i2c-adapter/i2c-0/0-0050/eeprom <span class="nv">of</span><span class="o">=</span>a.bin
+</span></span></code></pre></div><ol start="6">
+<li>Edit your boot configuration to enable the audio hardware:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nano /boot/firmware/config.txt
+</span></span></code></pre></div><p>Add these lines at the end:</p>
+<pre tabindex="0"><code>dtoverlay=i2s-mmap
+dtoverlay=googlevoicehat-soundcard
+</code></pre><ol start="7">
+<li>Configure your audio system:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nano /etc/asound.conf
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">options snd_rpi_googlemihat_soundcard <span class="nv">index</span><span class="o">=</span><span class="m">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">pcm.softvol <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">type</span> softvol
+</span></span><span class="line"><span class="cl">    slave.pcm dmix
+</span></span><span class="line"><span class="cl">    control <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        name Master
+</span></span><span class="line"><span class="cl">        card <span class="m">0</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">pcm.micboost <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">type</span> plug
+</span></span><span class="line"><span class="cl">    slave.pcm dsnoop
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">pcm.!default <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">type</span> asym
+</span></span><span class="line"><span class="cl">    playback.pcm <span class="s2">&#34;plug:softvol&#34;</span>
+</span></span><span class="line"><span class="cl">    capture.pcm <span class="s2">&#34;plug:micboost&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ctl.!default <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">type</span> hw
+</span></span><span class="line"><span class="cl">    card <span class="m">0</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><ol start="8">
+<li>Reboot and test your audio setup:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo reboot
+</span></span></code></pre></div><p>After rebooting, test recording and playback:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">arecord -D plughw:0 -c2 -r <span class="m">48000</span> -f S32_LE -t wav -V stereo -v test.wav
+</span></span><span class="line"><span class="cl">speaker-test -c2 --test<span class="o">=</span>wav -w test.wav
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">## /boot/firmware/config.txt</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Uncomment some or all of these to enable the optional hardware interfaces</span>
+</span></span><span class="line"><span class="cl"><span class="nv">dtparam</span><span class="o">=</span><span class="nv">i2c_arm</span><span class="o">=</span>on
+</span></span><span class="line"><span class="cl"><span class="nv">dtparam</span><span class="o">=</span><span class="nv">i2s</span><span class="o">=</span>on
+</span></span><span class="line"><span class="cl"><span class="nv">dtparam</span><span class="o">=</span><span class="nv">spi</span><span class="o">=</span>on
+</span></span><span class="line"><span class="cl"><span class="nv">dtparam</span><span class="o">=</span><span class="nv">i2c_vc</span><span class="o">=</span>on
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Automatically load overlays for detected cameras</span>
+</span></span><span class="line"><span class="cl"><span class="nv">camera_auto_detect</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Automatically load overlays for detected DSI displays</span>
+</span></span><span class="line"><span class="cl"><span class="nv">display_auto_detect</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Automatically load initramfs files, if found</span>
+</span></span><span class="line"><span class="cl"><span class="nv">auto_initramfs</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Enable DRM VC4 V3D driver</span>
+</span></span><span class="line"><span class="cl"><span class="nv">dtoverlay</span><span class="o">=</span>vc4-kms-v3d
+</span></span><span class="line"><span class="cl"><span class="nv">max_framebuffers</span><span class="o">=</span><span class="m">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Don&#39;t have the firmware create an initial video= setting in cmdline.txt.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Use the kernel&#39;s default instead.</span>
+</span></span><span class="line"><span class="cl"><span class="nv">disable_fw_kms_setup</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Run in 64-bit mode</span>
+</span></span><span class="line"><span class="cl"><span class="nv">arm_64bit</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Disable compensation for displays with overscan</span>
+</span></span><span class="line"><span class="cl"><span class="nv">disable_overscan</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Run as fast as firmware / board allows</span>
+</span></span><span class="line"><span class="cl"><span class="nv">arm_boost</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>cm4<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Enable host mode on the 2711 built-in XHCI USB controller.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># This line should be removed if the legacy DWC2 controller is required</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># (e.g. for USB device mode) or if USB support is not required.</span>
+</span></span><span class="line"><span class="cl"><span class="nv">otg_mode</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>cm5<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">dtoverlay</span><span class="o">=</span>dwc2,dr_mode<span class="o">=</span>host
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>all<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">dtoverlay</span><span class="o">=</span>i2s-mmap
+</span></span><span class="line"><span class="cl"><span class="nv">dtoverlay</span><span class="o">=</span>googlevoicehat-soundcard
+</span></span></code></pre></div><h2 id="camera-and-night-vision-setup">Camera and Night Vision Setup</h2>
+<p>The camera system provides real-time video monitoring with night vision capabilities.</p>
+<p><img alt="camera" src="/posts/open-nanny/camera.png"></p>
+<h3 id="installing-the-camera-module">Installing the Camera Module</h3>
+<ol>
+<li>Connect the CSI camera to the Raspberry Pi.</li>
+<li>Enable the camera in Raspberry Pi configuration:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo raspi-config
+</span></span></code></pre></div><p>Navigate to Interface Options → Camera → Enable.</p>
+<p>Or see: /boot/firmware/config.txt.</p>
+<ol start="3">
+<li>Install required camera software:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install -y python3-picamera2 libcamera-dev
+</span></span></code></pre></div><ol start="4">
+<li>Test the camera:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">libcamera-still -q <span class="m">80</span> -o test.jpg
+</span></span></code></pre></div><ol start="5">
+<li>Test camera with <code>opencv</code>.</li>
+</ol>
+<p>Create virtual environment for python:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python -m venv --system-site-packages env
+</span></span><span class="line"><span class="cl">env/bin/activate
+</span></span></code></pre></div><p>Install <code>opencv</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install opencv-python
+</span></span></code></pre></div><p>Create script and check if you can read a video frame.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">cv2</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">picamera2</span> <span class="kn">import</span> <span class="n">Picamera2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">picam2</span> <span class="o">=</span> <span class="n">Picamera2</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">picam2</span><span class="o">.</span><span class="n">preview_configuration</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="p">(</span><span class="mi">800</span><span class="p">,</span><span class="mi">800</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">picam2</span><span class="o">.</span><span class="n">preview_configuration</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="n">format</span> <span class="o">=</span> <span class="s2">&#34;RGB888&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">picam2</span><span class="o">.</span><span class="n">preview_configuration</span><span class="o">.</span><span class="n">align</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">picam2</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s2">&#34;preview&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">picam2</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">im</span> <span class="o">=</span> <span class="n">picam2</span><span class="o">.</span><span class="n">capture_array</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">im</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">im</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">im</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="ir-led-night-vision-control">IR LED Night Vision Control</h3>
+<p><img alt="camera_back" src="/posts/open-nanny/camera2.png"></p>
+<p>The standard camera module&rsquo;s IR LEDs consume significant power and emit visible red light. Our improved design allows software control of the IR lighting.</p>
+<ol>
+<li>Modify the IR LED circuit:
+<ul>
+<li>Keep the positive terminal of the IR LEDs connected to 3.3V</li>
+<li>Connect the negative terminal to the collector (C) of a 2N2222 NPN transistor</li>
+<li>Connect the transistor emitter (E) to ground</li>
+<li>Connect the transistor base (B) to GPIO pins through 1kΩ resistors</li>
+<li>I used GPIO pins 6 and 26, but you can choose others</li>
+</ul>
+</li>
+<li>Test the IR LED control with the provided script:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">cd</span> <span class="o">~/</span><span class="n">OpenNannyApi</span><span class="o">/</span><span class="n">api</span>
+</span></span><span class="line"><span class="cl"><span class="n">python</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">led_control</span>
+</span></span><span class="line"><span class="cl"><span class="n">led_control</span><span class="o">.</span><span class="n">right_on</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">led_control</span><span class="o">.</span><span class="n">left_on</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">led_control</span><span class="o">.</span><span class="n">right_off</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">led_control</span><span class="o">.</span><span class="n">left_off</span><span class="p">()</span>
+</span></span></code></pre></div><img src="npn.webp" alt="npn transistor" style="width:40%; height:auto;">
+<h2 id="wifi-power-management-fix">WiFi Power Management Fix</h2>
+<div class="justify">
+By default, Raspberry Pi Zero&rsquo;s WiFi enters power-saving mode after periods of inactivity, which can disrupt the monitor&rsquo;s connection. To prevent this.
+</div>
+
+<ol>
+<li>Check your current power management status:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">iwconfig
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">wlan0     IEEE 802.11  ESSID:<span class="s2">&#34;YOUR_SSID&#34;</span>  
+</span></span><span class="line"><span class="cl">          Mode:Managed  Frequency:2.412 GHz  Access Point: XX:XX:XX:XX:XX:XX   
+</span></span><span class="line"><span class="cl">          Bit <span class="nv">Rate</span><span class="o">=</span>57.7 Mb/s   Tx-Power<span class="o">=</span><span class="m">31</span> dBm   
+</span></span><span class="line"><span class="cl">          Retry short limit:7   RTS thr:off   Fragment thr:off
+</span></span><span class="line"><span class="cl">          Power Management:on
+</span></span><span class="line"><span class="cl">          Link <span class="nv">Quality</span><span class="o">=</span>52/70  Signal <span class="nv">level</span><span class="o">=</span>-58 dBm  
+</span></span><span class="line"><span class="cl">          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+</span></span><span class="line"><span class="cl">          Tx excessive retries:1  Invalid misc:0   Missed beacon:0
+</span></span><span class="line"><span class="cl">...
+</span></span></code></pre></div><ol start="2">
+<li>Disable WiFi power management permanently:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nano /etc/rc.local
+</span></span></code></pre></div><p>Add before the exit line:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/sbin/iwconfig wlan0 power off
+</span></span></code></pre></div><ol start="3">
+<li>Reboot &amp; verify:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">iwconfig
+</span></span></code></pre></div><p>You should now see <code>Power Management:off</code> in the output.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">wlan0     IEEE 802.11  ESSID:<span class="s2">&#34;YOUR_SSID&#34;</span>  
+</span></span><span class="line"><span class="cl">          Mode:Managed  Frequency:2.412 GHz  Access Point: XX:XX:XX:XX:XX:XX   
+</span></span><span class="line"><span class="cl">          Bit <span class="nv">Rate</span><span class="o">=</span>57.7 Mb/s   Tx-Power<span class="o">=</span><span class="m">31</span> dBm   
+</span></span><span class="line"><span class="cl">          Retry short limit:7   RTS thr:off   Fragment thr:off
+</span></span><span class="line"><span class="cl">          Power Management:off
+</span></span><span class="line"><span class="cl">          Link <span class="nv">Quality</span><span class="o">=</span>52/70  Signal <span class="nv">level</span><span class="o">=</span>-58 dBm  
+</span></span><span class="line"><span class="cl">          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+</span></span><span class="line"><span class="cl">          Tx excessive retries:1  Invalid misc:0   Missed beacon:0
+</span></span><span class="line"><span class="cl">...
+</span></span></code></pre></div><h2 id="setting-up-the-opennannyapi-software">Setting Up the OpenNannyApi Software</h2>
+<p>This section describes setting up the software to run RESTful API for <code>OpenNanny</code>.</p>
+<h3 id="creating-ssl-certificates-for-secure-communication">Creating SSL Certificates for Secure Communication</h3>
+<p>For secure encrypted communication between the app and your OpenNanny.</p>
+<ol>
+<li>Generate certificates using SimplePKI:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/knowledgeescalation/SimplePKI.git
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> SimplePKI
+</span></span><span class="line"><span class="cl">chmod +x *.sh
+</span></span><span class="line"><span class="cl">./gen-ca.sh
+</span></span></code></pre></div><ol start="2">
+<li>Follow the prompts to create your Certificate Authority:</li>
+</ol>
+<ul>
+<li>Country (two-letter country code)</li>
+<li>State/Province</li>
+<li>Locality/City</li>
+<li>Organization</li>
+<li>Common Name for your CA</li>
+</ul>
+<p>The script will:</p>
+<ul>
+<li>Create necessary directories (root-ca, crl, certs, new_certs, csr)</li>
+<li>Generate an ECC private key for your CA</li>
+<li>Create a self-signed CA certificate valid for 5 years</li>
+<li>Generate a random serial number</li>
+<li>Create a <code>gen-cert.sh</code> script for issuing certificates</li>
+</ul>
+<ol start="3">
+<li>Generate a server certificate:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./gen-cert.sh
+</span></span></code></pre></div><p>You&rsquo;ll be prompted to enter the server&rsquo;s DNS name. The script will:</p>
+<ul>
+<li>Generate an ECC key pair for the server</li>
+<li>Create a Certificate Signing Request (CSR)</li>
+<li>Set up proper DNS entries in the Subject Alternative Name extension</li>
+<li>Issue and sign the certificate with your CA</li>
+</ul>
+<ol start="4">
+<li>Copy the generated certificates to your OpenNannyApi directory.</li>
+</ol>
+<h3 id="configuring-the-influxdb-time-series-database">Configuring the InfluxDB Time-Series Database</h3>
+<p>InfluxDB stores environmental sensor data for historical analysis.</p>
+<ol>
+<li>Create the InfluxDB configuration files:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~/OpenNannyApi
+</span></span><span class="line"><span class="cl">mkdir influx
+</span></span></code></pre></div><ol start="2">
+<li>Create credential files for secure database access:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nano /root/.env.influxdb2-admin-username
+</span></span><span class="line"><span class="cl"><span class="c1"># Enter your admin username</span>
+</span></span><span class="line"><span class="cl">sudo nano /root/.env.influxdb2-admin-password
+</span></span><span class="line"><span class="cl"><span class="c1"># Enter your admin password</span>
+</span></span><span class="line"><span class="cl">sudo nano /root/.env.influxdb2-admin-token
+</span></span><span class="line"><span class="cl"><span class="c1"># Enter a secure token</span>
+</span></span></code></pre></div><ol start="3">
+<li>Create the Docker Compose file as specified in the repository.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim influx/compose.yaml
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;3&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">influxdb</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">influxdb:2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">influx</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="m">127.0.0.1</span><span class="p">:</span><span class="m">8086</span><span class="p">:</span><span class="m">8086</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">USER-UID</span><span class="p">:</span><span class="w"> </span><span class="m">1000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">USER_GID</span><span class="p">:</span><span class="w"> </span><span class="m">1000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">DOCKER_INFLUXDB_INIT_MODE</span><span class="p">:</span><span class="w"> </span><span class="l">setup</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">DOCKER_INFLUXDB_INIT_USERNAME_FILE</span><span class="p">:</span><span class="w"> </span><span class="l">/run/secrets/influxdb2-admin-username</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">DOCKER_INFLUXDB_INIT_PASSWORD_FILE</span><span class="p">:</span><span class="w"> </span><span class="l">/run/secrets/influxdb2-admin-password</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">DOCKER_INFLUXDB_INIT_ADMIN_TOKEN_FILE</span><span class="p">:</span><span class="w"> </span><span class="l">/run/secrets/influxdb2-admin-token</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">DOCKER_INFLUXDB_INIT_ORG</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;INFLUX_ORG&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">DOCKER_INFLUXDB_INIT_BUCKET</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;INFLUX_BUCKET&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">secrets</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">influxdb2-admin-username</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">influxdb2-admin-password</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">influxdb2-admin-token</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">/home/&#34;USER_NAME&#34;/OpenNannyApi/influx/influx_data:/var/lib/influxdb2:rw</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">/home/&#34;USER_NAME&#34;/OpenNannyApi/influx/influx_config:/etc/influxdb2:rw</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">/etc/timezone:/etc/timezone:ro</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">/etc/localtime:/etc/localtime:ro</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">secrets</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">influxdb2-admin-username</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">file</span><span class="p">:</span><span class="w"> </span><span class="l">~/.env.influxdb2-admin-username</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">influxdb2-admin-password</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">file</span><span class="p">:</span><span class="w"> </span><span class="l">~/.env.influxdb2-admin-password</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">influxdb2-admin-token</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">file</span><span class="p">:</span><span class="w"> </span><span class="l">~/.env.influxdb2-admin-token</span><span class="w">
+</span></span></span></code></pre></div><ol start="4">
+<li>Set up InfluxDB as a system service:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo vim /etc/systemd/system/influx.service
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>Unit<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">Description</span><span class="o">=</span>InfluxDB service with Docker Compose
+</span></span><span class="line"><span class="cl"><span class="nv">PartOf</span><span class="o">=</span>docker.service
+</span></span><span class="line"><span class="cl"><span class="nv">After</span><span class="o">=</span>docker.service
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>Service<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">Type</span><span class="o">=</span>oneshot
+</span></span><span class="line"><span class="cl"><span class="nv">RemainAfterExit</span><span class="o">=</span><span class="nb">true</span>
+</span></span><span class="line"><span class="cl"><span class="nv">WorkingDirectory</span><span class="o">=</span>/home/<span class="s2">&#34;USER_NAME&#34;</span>/OpenNannyApi/influx
+</span></span><span class="line"><span class="cl"><span class="nv">ExecStart</span><span class="o">=</span>/usr/bin/docker-compose up -d --remove-orphans
+</span></span><span class="line"><span class="cl"><span class="nv">ExecStop</span><span class="o">=</span>/usr/bin/docker-compose down
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>Install<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
+</span></span></code></pre></div><ol start="5">
+<li>Enable and start influx service:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl <span class="nb">enable</span> influx
+</span></span><span class="line"><span class="cl">systemctl start influx
+</span></span></code></pre></div><ol start="6">
+<li>Verify the database is running:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl status influx
+</span></span><span class="line"><span class="cl">docker ps
+</span></span><span class="line"><span class="cl">ss -tulpn
+</span></span></code></pre></div><p>If everything works try logging into the database via web browser (<code>127.0.0.1:8086</code>) over ssh.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh -L 8086:127.0.0.1:8086 <span class="se">\$</span>USER_NAME@<span class="se">\$</span>NANNY_IP
+</span></span></code></pre></div><h3 id="integrating-sensors-with-the-database">Integrating Sensors with the Database</h3>
+<ol>
+<li>Configure the sensor integration:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim ~/OpenNannyApi/sensors/.env
+</span></span></code></pre></div><ol start="2">
+<li>Add your InfluxDB credentials:</li>
+</ol>
+<pre tabindex="0"><code>token=YOUR_INFLUX_TOKEN
+influx_org=YOUR_ORG_NAME
+influx_bucket=YOUR_BUCKET_NAME
+</code></pre><ol start="3">
+<li>Run <code>script.py</code>:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python sensors/script.py
+</span></span></code></pre></div><ol start="4">
+<li>If everything works create a system service for sensor data collection:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo vim /etc/systemd/system/sensors.service
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>Unit<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">Description</span><span class="o">=</span>CO2 <span class="p">&amp;</span> UPS sensors
+</span></span><span class="line"><span class="cl"><span class="nv">After</span><span class="o">=</span>influx.service
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>Service<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">Restart</span><span class="o">=</span>always
+</span></span><span class="line"><span class="cl"><span class="nv">ExecStart</span><span class="o">=</span>/home/<span class="s2">&#34;USER_NAME&#34;</span>/OpenNannyApi/sensors/env/bin/python /home/<span class="s2">&#34;USER_NAME&#34;</span>/OpenNannyApi/sensors/script.py
+</span></span><span class="line"><span class="cl"><span class="nv">ExecStop</span><span class="o">=</span>deactivate
+</span></span><span class="line"><span class="cl"><span class="o">[</span>Install<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
+</span></span></code></pre></div><ol start="5">
+<li>Enable and start sensors service:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl <span class="nb">enable</span> sensors
+</span></span><span class="line"><span class="cl">systemctl start sensors
+</span></span></code></pre></div><ol start="6">
+<li>After running for some time, you can create dashboards to visualize the environmental data:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh -L 8086:127.0.0.1:8086 <span class="se">\$</span>USER_NAME@<span class="se">\$</span>NANNY_IP
+</span></span></code></pre></div><ol start="7">
+<li>Create dashboards.</li>
+</ol>
+<p>Co2 plot.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">from</span><span class="p">(</span><span class="n">bucket</span><span class="p">:</span> <span class="s2">&#34;influx_bucket&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="o">|&gt;</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">:</span> <span class="n">v</span><span class="o">.</span><span class="n">timeRangeStart</span><span class="p">,</span> <span class="n">stop</span><span class="p">:</span> <span class="n">v</span><span class="o">.</span><span class="n">timeRangeStop</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="o">|&gt;</span> <span class="nb">filter</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">r</span><span class="p">[</span><span class="s2">&#34;_measurement&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;co2_sensor&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="o">|&gt;</span> <span class="nb">filter</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">r</span><span class="p">[</span><span class="s2">&#34;_field&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;co2&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Temperature plot.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">from</span><span class="p">(</span><span class="n">bucket</span><span class="p">:</span> <span class="s2">&#34;influx_bucket&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="o">|&gt;</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">:</span> <span class="n">v</span><span class="o">.</span><span class="n">timeRangeStart</span><span class="p">,</span> <span class="n">stop</span><span class="p">:</span> <span class="n">v</span><span class="o">.</span><span class="n">timeRangeStop</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="o">|&gt;</span> <span class="nb">filter</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">r</span><span class="p">[</span><span class="s2">&#34;_measurement&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;co2_sensor&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="o">|&gt;</span> <span class="nb">filter</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">r</span><span class="p">[</span><span class="s2">&#34;_field&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;temperature&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Humidity plot.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">from</span><span class="p">(</span><span class="n">bucket</span><span class="p">:</span> <span class="s2">&#34;influx_bucket&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="o">|&gt;</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">:</span> <span class="n">v</span><span class="o">.</span><span class="n">timeRangeStart</span><span class="p">,</span> <span class="n">stop</span><span class="p">:</span> <span class="n">v</span><span class="o">.</span><span class="n">timeRangeStop</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="o">|&gt;</span> <span class="nb">filter</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">r</span><span class="p">[</span><span class="s2">&#34;_measurement&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;co2_sensor&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="o">|&gt;</span> <span class="nb">filter</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">r</span><span class="p">[</span><span class="s2">&#34;_field&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;humidity&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Charge plot.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">from</span><span class="p">(</span><span class="n">bucket</span><span class="p">:</span> <span class="s2">&#34;influx_bucket&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="o">|&gt;</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">:</span> <span class="n">v</span><span class="o">.</span><span class="n">timeRangeStart</span><span class="p">,</span> <span class="n">stop</span><span class="p">:</span> <span class="n">v</span><span class="o">.</span><span class="n">timeRangeStop</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="o">|&gt;</span> <span class="nb">filter</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">r</span><span class="p">[</span><span class="s2">&#34;_measurement&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;ups_sensor&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="o">|&gt;</span> <span class="nb">filter</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">r</span><span class="p">[</span><span class="s2">&#34;_field&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;charge&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Current plot.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">from</span><span class="p">(</span><span class="n">bucket</span><span class="p">:</span> <span class="s2">&#34;influx_bucket&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="o">|&gt;</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">:</span> <span class="n">v</span><span class="o">.</span><span class="n">timeRangeStart</span><span class="p">,</span> <span class="n">stop</span><span class="p">:</span> <span class="n">v</span><span class="o">.</span><span class="n">timeRangeStop</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="o">|&gt;</span> <span class="nb">filter</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">r</span><span class="p">[</span><span class="s2">&#34;_measurement&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;ups_sensor&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="o">|&gt;</span> <span class="nb">filter</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">r</span><span class="p">[</span><span class="s2">&#34;_field&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;current&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><ol start="8">
+<li>Analyze the data.</li>
+</ol>
+<p><img alt="influx" src="/posts/open-nanny/influx.png"></p>
+<h3 id="setting-up-the-rest-api-service">Setting Up the REST API Service</h3>
+<ol>
+<li>Generate a secure key for JWT authentication:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">openssl rand -hex <span class="m">32</span>
+</span></span></code></pre></div><ol start="2">
+<li>Create a password hash:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">htpasswd -bnBC <span class="m">12</span> <span class="s2">&#34;&#34;</span> YOUR_PASSWORD
+</span></span></code></pre></div><ol start="3">
+<li>Configure the API environment:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim ~/OpenNannyApi/api/.env
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">SECRET_KEY</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">USER_NAME</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="n">FULL_USER_NAME</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="n">USER_EMAIL</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">USER_HASH</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">MUSIC_PATH</span><span class="o">=</span><span class="n">DIRECTORY</span><span class="o">/</span><span class="n">TO</span><span class="o">/</span><span class="n">STORE</span><span class="o">/</span><span class="n">MP3</span><span class="o">/</span><span class="n">FILES</span>
+</span></span></code></pre></div><ol start="4">
+<li>Debug API server:</li>
+</ol>
+<ul>
+<li>without certificate:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">uvicorn main:app --host 0.0.0.0 --port <span class="m">8888</span>
+</span></span></code></pre></div><ul>
+<li>with certificate:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">uvicorn main:app --host 0.0.0.0 --port <span class="m">8888</span> --ssl-keyfile ./<span class="s2">&#34;KEY_NAME&#34;</span>.key --ssl-certfile
+</span></span></code></pre></div><ol start="5">
+<li>If everything is working properly create a system service.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim /etc/systemd/system/api.service
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>Unit<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">Description</span><span class="o">=</span>API service
+</span></span><span class="line"><span class="cl"><span class="nv">After</span><span class="o">=</span>network.target
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>Service<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">WorkingDirectory</span><span class="o">=</span>/home/<span class="s2">&#34;USER_NAME&#34;</span>/OpenNannyApi/api
+</span></span><span class="line"><span class="cl"><span class="nv">ExecStart</span><span class="o">=</span>/home/<span class="s2">&#34;USER_NAME&#34;</span>/OpenNannyApi/api/env/bin/uvicorn main:app --host 0.0.0.0 --port <span class="m">8888</span> --ssl-keyfile ./<span class="s2">&#34;KEY_NAME&#34;</span>.key --ssl-certfile ./<span class="s2">&#34;KEY_NAME&#34;</span>.crt 
+</span></span><span class="line"><span class="cl"><span class="nv">Restart</span><span class="o">=</span>on-failure
+</span></span><span class="line"><span class="cl"><span class="nv">PrivateTmp</span><span class="o">=</span><span class="nb">true</span>
+</span></span><span class="line"><span class="cl"><span class="nv">ProtectSystem</span><span class="o">=</span>full
+</span></span><span class="line"><span class="cl"><span class="nv">User</span><span class="o">=</span><span class="s2">&#34;USER_NAME&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">Group</span><span class="o">=</span><span class="s2">&#34;USER_NAME&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>Install<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
+</span></span></code></pre></div><ol start="6">
+<li>Enable and start api service:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl <span class="nb">enable</span> api
+</span></span><span class="line"><span class="cl">systemctl start api
+</span></span></code></pre></div><ol start="5">
+<li>Test the API functionality (you can export <code>NANNY_IP</code> variable in your terminal).</li>
+</ol>
+<ul>
+<li>For TLS verification you can analyze the output of following command or use <code>wireshark</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">openssl s_client -connect <span class="nv">$NANNY_IP</span>:8888
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">No client certificate CA names sent
+</span></span><span class="line"><span class="cl">Peer signing digest: SHA384
+</span></span><span class="line"><span class="cl">Peer signature type: ECDSA
+</span></span><span class="line"><span class="cl">Server Temp Key: X25519, <span class="m">253</span> bits
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">SSL handshake has <span class="nb">read</span> <span class="m">1202</span> bytes and written <span class="m">395</span> bytes
+</span></span><span class="line"><span class="cl">Verification: OK
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+</span></span><span class="line"><span class="cl">Server public key is <span class="m">384</span> bit
+</span></span><span class="line"><span class="cl">Secure Renegotiation IS NOT supported
+</span></span><span class="line"><span class="cl">Compression: NONE
+</span></span><span class="line"><span class="cl">Expansion: NONE
+</span></span><span class="line"><span class="cl">No ALPN negotiated
+</span></span><span class="line"><span class="cl">Early data was not sent
+</span></span><span class="line"><span class="cl">Verify <span class="k">return</span> code: <span class="m">0</span> <span class="o">(</span>ok<span class="o">)</span>
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></div><ul>
+<li>Check API endpoint without token.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl https://<span class="nv">$NANNY_IP</span>:8888/sensors
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">{</span><span class="s2">&#34;detail&#34;</span>:<span class="s2">&#34;Not authenticated&#34;</span><span class="o">}</span>
+</span></span></code></pre></div><ul>
+<li>Check <code>token</code> endpoint with wrong username/password.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -X POST <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>https://<span class="nv">$NANNY_IP</span>:8888/token <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-H <span class="s1">&#39;accept: application/json&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-H <span class="s1">&#39;Content-Type: application/x-www-form-urlencoded&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-d <span class="s1">&#39;username=test&amp;password=test&#39;</span><span class="se">\
+</span></span></span></code></pre></div><ul>
+<li>Authenticate to <code>token</code> endpoint with your username/password and get JWT token.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -X POST <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>https://<span class="nv">$NANNY_IP</span>:8888/token <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-H <span class="s1">&#39;accept: application/json&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-H <span class="s1">&#39;Content-Type: application/x-www-form-urlencoded&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-d <span class="s1">&#39;username=YOUR_USERNAME&amp;password=YOUR_SECRET&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">{</span><span class="s2">&#34;access_token&#34;</span>:<span class="s2">&#34;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkb21lY3pla2FwcCIsImV4cCI6MTc0MjU4NzE2NX0.kVRrPOtSrPM1qjXW_uv0RLnLFcytIDO45bXlB9gphM4&#34;</span>,<span class="s2">&#34;token_type&#34;</span>:<span class="s2">&#34;bearer&#34;</span><span class="o">}</span>
+</span></span></code></pre></div><ul>
+<li>Check API endpoint without valid token.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl https://<span class="nv">$NANNY_IP</span>:8888/sensors -H <span class="s1">&#39;Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkb21lY3pla2FwcCIsImV4cCI6MTc0MjU4NzE2NX0.kVRrPOtSrPM1qjXW_uv0RLnLFcytIDO45bXlB9gphM4&#39;</span>
+</span></span></code></pre></div><p>You should receive sensor data in JSON format.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[{</span><span class="s2">&#34;name&#34;</span>:<span class="s2">&#34;co2&#34;</span>,<span class="s2">&#34;value&#34;</span>:<span class="s2">&#34;979&#34;</span><span class="o">}</span>,<span class="o">{</span><span class="s2">&#34;name&#34;</span>:<span class="s2">&#34;humidity&#34;</span>,<span class="s2">&#34;value&#34;</span>:<span class="s2">&#34;42.14&#34;</span><span class="o">}</span>,<span class="o">{</span><span class="s2">&#34;name&#34;</span>:<span class="s2">&#34;temperature&#34;</span>,<span class="s2">&#34;value&#34;</span>:<span class="s2">&#34;23.7&#34;</span><span class="o">}</span>,<span class="o">{</span><span class="s2">&#34;name&#34;</span>:<span class="s2">&#34;charge&#34;</span>,<span class="s2">&#34;value&#34;</span>:<span class="s2">&#34;33.3&#34;</span><span class="o">}]</span>
+</span></span></code></pre></div><ul>
+<li>Use following script to test WebRTC without authentication.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">asyncio</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">websockets</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">webrtc_client</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">uri</span> <span class="o">=</span> <span class="s2">&#34;wss://NANNY_IP:8888/webrtc&#34;</span>  <span class="c1"># Adjust host/port if needed</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">async</span> <span class="k">with</span> <span class="n">websockets</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">uri</span><span class="p">)</span> <span class="k">as</span> <span class="n">websocket</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Connected to WebRTC server&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">webrtc_client</span><span class="p">())</span>
+</span></span></code></pre></div><ul>
+<li>Use following script to test WebRTC with authentication.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">asyncio</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">websockets</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">webrtc_client</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">uri</span> <span class="o">=</span> <span class="s2">&#34;wss://NANNY_IP:8888/webrtc&#34;</span>  <span class="c1"># Adjust host/port if needed</span>
+</span></span><span class="line"><span class="cl">    <span class="n">token</span> <span class="o">=</span> <span class="s2">&#34;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkb21lY3pla2FwcCIsImV4cCI6MTc0MjU4NzE2NX0.kVRrPOtSrPM1qjXW_uv0RLnLFcytIDO45bXlB9gphM4&#34;</span>  <span class="c1"># Replace with a valid JWT token</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">async</span> <span class="k">with</span> <span class="n">websockets</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">uri</span><span class="p">,</span> <span class="n">additional_headers</span><span class="o">=</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;Authorization&#34;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&#34;Bearer </span><span class="si">{</span><span class="n">token</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span> <span class="k">as</span> <span class="n">websocket</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Connected to WebRTC server&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">webrtc_client</span><span class="p">())</span>
+</span></span></code></pre></div><ul>
+<li>To update python trust anchors run:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">REQUESTS_CA_BUNDLE</span><span class="o">=</span>/path/to/your/certificate.pem
+</span></span></code></pre></div><h2 id="configuring-the-opennannyapp">Configuring the OpenNannyApp</h2>
+<p><a href="https://github.com/knowledgeescalation/OpenNannyApp"><strong>OpenNannyApp</strong></a> is an Android application designed to connect with and control a <a href="https://github.com/knowledgeescalation/OpenNannyApi">OpenNannyApi</a>. The app provides a user-friendly interface to monitor environmental conditions, stream video feed, and play music through the connected monitoring device. In order to setup application do following steps.</p>
+<ol>
+<li>Install the OpenNannyApp on your Android device.</li>
+<li>Configure the app to connect to your OpenNanny:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"># Edit app/src/main/res/values/strings.xml
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;resources&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;app_name&#34;</span><span class="nt">&gt;</span>OpenNannyApp<span class="nt">&lt;/string&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;api_ip&#34;</span><span class="nt">&gt;</span>NANNY_IP<span class="nt">&lt;/string&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;api_user&#34;</span><span class="nt">&gt;</span>USER_NAME<span class="nt">&lt;/string&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;api_pass&#34;</span><span class="nt">&gt;</span>USER_PASS<span class="nt">&lt;/string&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/resources&gt;</span>
+</span></span></code></pre></div><ol start="3">
+<li>Add Root CA certificate (<code>app/src/main/res/raw/ca.crt</code>).</li>
+<li>Navigate through the app to access different monitoring and control features.</li>
+</ol>
+<h2 id="security-considerations-and-best-practices">Security Considerations and Best Practices</h2>
+<p>When building a baby monitor, security should be a top priority:</p>
+<ul>
+<li><strong>Local Network Operation</strong>: Unlike cloud-connected commercial monitors, OpenNanny operates entirely on your local network</li>
+<li><strong>Data Encryption</strong>: All communication between the app and OpenNanny is encrypted using TLS</li>
+<li><strong>Authentication</strong>: JWT tokens provide secure authentication for all API requests</li>
+<li><strong>No Cloud Storage</strong>: Video feeds and sensor data never leave your network</li>
+<li><strong>Regular Updates</strong>: Keep your Raspberry Pi OS and OpenNanny software updated</li>
+<li><strong>Change Default Credentials</strong>: Always use strong, unique passwords for API access</li>
+<li><strong>Firewall</strong>: Implement firewall rules using <code>iptables</code>, block all traffic except SSH and API.</li>
+</ul>
+<h2 id="troubleshooting-common-issues">Troubleshooting Common Issues</h2>
+<ul>
+<li><strong>Camera Not Detected</strong>: Ensure the ribbon cable is properly seated and camera is enabled</li>
+<li><strong>Audio Issues</strong>: Check I2S configuration and verify EEPROM data was written correctly</li>
+<li><strong>WiFi Disconnection</strong>: Confirm power management is disabled and your router has a strong signal</li>
+<li><strong>Sensor Reading Errors</strong>: Verify I2C connections and addresses with i2cdetect</li>
+<li><strong>Battery Drain</strong>: Check current consumption with the UPS HAT monitoring tools</li>
+</ul>
+<h2 id="conclusion-and-next-steps">Conclusion and Next Steps</h2>
+<div class="justify">
+<p>The OpenNanny project we&rsquo;ve explored represents a comprehensive approach with enterprise-grade security and expandability. By building your own smart baby monitor, you gain complete control over your data and can customize the system to your specific needs—all at a fraction of the cost of commercial alternatives with fewer features.</p>
+<p>Whether you choose to implement the basic monitoring capabilities or expand into advanced AI features like computer vision with YOLO, voice capabilities, or local LLM integration, your DIY OpenNanny puts you in control of your baby&rsquo;s monitoring environment. The modular nature of the project allows you to start with core functionality and gradually enhance it as your skills and requirements evolve.</p>
+<p>As the Raspberry Pi platform continues to improve with more powerful models and the open-source community contributes new innovations, the possibilities for enhancing your baby monitor will only expand. Your OpenNanny isn&rsquo;t just a useful tool for your family—it&rsquo;s also an opportunity to develop valuable skills in Linux, networking, sensors, and embedded systems programming that can be applied to many other projects.</p>
+<p>We hope this guide inspires you to create a secure, feature-rich monitoring solution tailored to your family&rsquo;s needs. Happy building!</p>
+
+</div>
+
+
             </div>
         </article></main>
 </div>
