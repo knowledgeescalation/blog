@@ -1083,3 +1083,7 @@ As the Raspberry Pi platform continues to improve with more powerful models and 
 
 We hope this guide inspires you to create a secure, feature-rich monitoring solution tailored to your family's needs. Happy building!
 {{< /justify >}} 
+
+{{< center >}} 
+# <-- [Comments](https://github.com/knowledgeescalation/blog/issues/1) -->
+{{< /center >}} 

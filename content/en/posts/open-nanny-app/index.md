@@ -781,3 +781,6 @@ The complete implementation showcases the power of Kotlin coroutines for asynchr
 {{< /justify >}}
 
 
+{{< center >}} 
+# <-- [Comments](https://github.com/knowledgeescalation/blog/issues/2) -->
+{{< /center >}} 
