@@ -79,7 +79,7 @@ theme = "hugo-blog-awesome"
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
   # You can take a look at layouts/index.html for more information.
-  description = "Cybersecurity & AI Hobby Projects Blog"
+  description = "Cybersecurity & AI Projects Blog"
   mainSections = ['posts']
   toc = true # set to false to disable table of contents 'globally'
   tocOpen = false # set to true to open table of contents by default
@@ -101,7 +101,7 @@ theme = "hugo-blog-awesome"
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
   intro = "Knowledge Escalation"
   name = "Knowledge Escalation"
-  description = "Explore engaging hobby projects that blend cybersecurity and artificial intelligence. Discover insights, implementation guides, and enhance your skills in these exciting fields. Join us for a creative journey into technology!"
+  description = "Explore engaging projects that blend cybersecurity and artificial intelligence. Discover insights, implementation guides, and enhance your skills in these exciting fields. Join us for a creative journey into technology!"
 
 # Allow to override webmanifest options
 [Languages.en-us.params.webmanifest]

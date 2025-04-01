@@ -1,0 +1,204 @@
+{
+  "main": {
+    "id": "178f15b4b14bda69",
+    "type": "split",
+    "children": [
+      {
+        "id": "c10a3e349d3fc09d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3d4c16e063c7eccc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/open-nanny-app/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "46f05d5fb925d5c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/open-nanny/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4585aa419a0749c6",
+    "type": "split",
+    "children": [
+      {
+        "id": "98512f9a0eb23590",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1a45ec9d031b5a73",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "a1204f664ec8a708",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "94bdcc88369d8e56",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d20c7bfcfcc6969c",
+    "type": "split",
+    "children": [
+      {
+        "id": "1db03668e63766fe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e51532159ffc20f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "posts/open-nanny/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
+            }
+          },
+          {
+            "id": "19e137eca0738dea",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "posts/open-nanny/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
+            }
+          },
+          {
+            "id": "1635040c992b7be1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e9fce8dde691dcd5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "posts/open-nanny/index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "3d4c16e063c7eccc",
+  "lastOpenFiles": [
+    "posts/open-nanny/index.md",
+    "pages/about.md",
+    "posts/open-nanny/1.jpg",
+    "posts/open-nanny/xi.jpg",
+    "posts/open-nanny/1_bp.png",
+    "posts/open-nanny/IMG-20250401-WA0005.jpg",
+    "posts/open-nanny/sensor_xi.jpg",
+    "posts/open-nanny/sensor_xi2.jpg",
+    "posts/open-nanny/IMG-20250401-WA0009.jpg",
+    "posts/open-nanny-app/index.md",
+    "posts/_index.md",
+    "posts/open-nanny-app",
+    "posts/open-nanny/speakers.webp",
+    "posts/open-nanny/influx.png",
+    "posts/open-nanny/eeprom.webp",
+    "2025-03-02.md"
+  ]
+}

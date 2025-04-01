@@ -6,21 +6,59 @@
     <description>Recent content in Posts on Knowledge Escalation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledgeescalation.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledgeescalation.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open Nanny</title>
       <link>https://knowledgeescalation.com/posts/open-nanny/</link>
-      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       
       <guid>https://knowledgeescalation.com/posts/open-nanny/</guid>
       
-      <description>&lt;p&gt;&lt;img src=&#34;https://knowledgeescalation.com/posts/open-nanny/1.png&#34; alt=&#34;XI&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Secure, Smart, and Open: Building a Feature-Rich Raspberry Pi Baby Monitor with Real-Time Streaming, Environmental Monitoring, and Lullaby Playback for Modern Parents.&lt;/p&gt;
-&lt;p&gt;..in progress&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;fun&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ret&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ret&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>&lt;p&gt;&lt;img alt=&#34;OpenNannyFront&#34; src=&#34;https://knowledgeescalation.com/posts/open-nanny/1.jpg&#34;&gt;&lt;/p&gt;
+&lt;div class=&#34;justify&#34;&gt;
+Secure, Smart, and Open: Building a Feature-Rich Raspberry Pi Baby Monitor with Real-Time Streaming, Environmental Monitoring, and Lullaby Playback for Modern Parents.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;div class=&#34;justify&#34;&gt;
+&lt;p&gt;Are you a tech-savvy parent looking for a secure, customizable, and affordable baby monitoring solution? Commercial baby monitors often come with limited features, security concerns, and high price tags. The &lt;strong&gt;OpenNanny&lt;/strong&gt; project solves these problems by leveraging the versatility of Raspberry Pi to create a feature-rich baby monitor with capabilities that surpass many commercial options.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Open Nanny App</title>
+      <link>https://knowledgeescalation.com/posts/open-nanny-app/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://knowledgeescalation.com/posts/open-nanny-app/</guid>
+      
+      <description>&lt;h1 id=&#34;building-a-smart-baby-monitor-app-with-kotlin-and-jetpack-compose-a-comprehensive-tutorial&#34;&gt;Building a Smart Baby Monitor App with Kotlin and Jetpack Compose: A Comprehensive Tutorial&lt;/h1&gt;
+&lt;div class=&#34;justify&#34;&gt;
+In an era where smart home technology is becoming increasingly prevalent, creating a connected baby monitor app represents both a practical and educational project for Android developers. This tutorial walks through how to build an advanced baby monitor application - &lt;a href=&#34;https://github.com/knowledgeescalation/OpenNannyApp&#34;&gt;OpenNannyApp&lt;/a&gt; - that provides real-time video streaming, environmental sensor monitoring, music playback, and lighting control. We&amp;rsquo;ll explore how to implement these features using modern Android development techniques including Kotlin, Jetpack Compose, Retrofit, and WebRTC.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;introduction-to-the-opennannyapp-architecture&#34;&gt;Introduction to the OpenNannyApp Architecture&lt;/h2&gt;
+&lt;div class=&#34;justify&#34;&gt;
+OpenNannyApp follows a modern MVVM (Model-View-ViewModel) architecture pattern, with a clear separation of concerns between UI components, business logic, and data handling. Before diving into implementation details, let&amp;rsquo;s understand the app&amp;rsquo;s core components:
+&lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Network Communication Layer&lt;/strong&gt;: Handles API requests using Retrofit and token-based authentication&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Video Streaming Module&lt;/strong&gt;: Implements WebRTC for real-time video transmission&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UI Layer&lt;/strong&gt;: Built with Jetpack Compose for a reactive and declarative interface&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ViewModels&lt;/strong&gt;: Manage data flow and state for different features (sensors, music, lighting)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;justify&#34;&gt;
+This architecture promotes maintainability, testability, and separation of concerns—principles that are essential for any production-quality application.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;setting-up-the-network-communication-layer&#34;&gt;Setting Up the Network Communication Layer&lt;/h2&gt;
+&lt;div class=&#34;justify&#34;&gt;
+At the heart of our app is the ability to communicate with the baby monitor device. Let&amp;rsquo;s examine how the &lt;a href=&#34;https://github.com/knowledgeescalation/OpenNannyApp/blob/master/src/main/java/com/example/opennannyapp/api/NetworkModule.kt&#34;&gt;NetworkModule&lt;/a&gt; establishes this critical connection.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;implementing-the-api-service-interface&#34;&gt;Implementing the API Service Interface&lt;/h3&gt;
+&lt;p&gt;The first step is defining our API endpoints through a Retrofit interface:&lt;/p&gt;</description>
       
     </item>
     
